@@ -11,7 +11,7 @@ const splideOptions = {
   keyboard: true,
   mediaQuery: "min",
   breakpoints: {
-    1025: {
+    1200: {
       destroy: true,
     },
     320: {

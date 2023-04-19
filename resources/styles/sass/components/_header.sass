@@ -215,18 +215,19 @@
     flex-direction: row
 
 .header__nav-item
+  padding: 16px
   text-transform: uppercase
   // margin-bottom: 32px
   // margin: 0 auto 32px auto
-  padding: 16px
 
   @media (min-width: 1025px)
+    padding: 0
     margin: auto
     &:not(:last-child)
-      // margin-right: 20px
+      margin-right: 20px
   @media (min-width: 1200px)
+    margin: auto
     &:not(:last-child)
-      // margin-right: 39px
 
 .header__nav-link
   padding: 16px
@@ -239,7 +240,11 @@
   color: $white-color
 
   @media (min-width: 1025px)
+    padding: 16px 0
     color: $switch-text-color
+
+  @media (min-width: 1200px)
+    padding: 16px
 
   &:hover,
   &:focus

@@ -25,12 +25,12 @@
       .hero-container {
         background-image: url("./images/hero-bg-mobile.jpg");
       }
-      @media (min-width: 1024px) {
+      @media (min-width: 1025px) {
         .hero-container {
           background-image: none;
         }
       }
-      @media (min-width: 1024px) {
+      @media (min-width: 1025px) {
         .hero__halfhex {
           background-image: url("./images/half-hex.jpg");
         }
@@ -40,7 +40,7 @@
         background-size: cover;
         min-height: 1828px;
       }
-      @media (min-width: 1024px) {
+      @media (min-width: 1025px) {
         .services-and-products-container {
           background-image: url("images/services-desktop-bg.jpg");
           background-size: cover;
@@ -114,7 +114,7 @@
       .partners-container {
         background-image: url("images/partners-mobile.jpg");
       }
-      @media (min-width: 1024px) {
+      @media (min-width: 1025px) {
         .partners-container {
           background-image: url("images/partners-1024.jpg");
         }
@@ -127,6 +127,14 @@
       @media (min-width: 2560px) {
         .partners-container {
           background-image: url("images/partners-2560.jpg");
+        }
+      }
+      .benefits-background {
+        background-image: url("images/benefits-bg.png");
+      }
+      @media (min-width: 1920px) {
+        .benefits-second-background {
+          background-image: url("images/benefits-second-bg.jpg");
         }
       }
     </style>
@@ -509,7 +517,13 @@
         <div class="container">
           <section class="partners partners--section">
             <h2 class="partners__title">
-              Working <span class="partners__subtitle">with:</span>
+              Working
+              <span class="partners__subtitle"
+                >with:
+                <svg class="dot partners__dot" fill="#fff">
+                  <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                </svg>
+              </span>
             </h2>
             <div class="splide" aria-label="Basic Structure Example">
               <div class="splide__track">
@@ -569,8 +583,68 @@
           </section>
         </div>
       </div>
+      <div class="benefits-container">
+        <div class="benefits-background"></div>
+        <div class="benefits-second-background"></div>
+
+        <div class="container">
+          <section class="benefits">
+            <div class="benefits__content">
+              <h2 class="benefits__title">
+                Why work
+                <span class="benefits__subtitle"
+                  >with us?
+                  <svg class="dot benefits__dot" fill="#48B57F">
+                    <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                  </svg>
+                </span>
+              </h2>
+              <p class="benefits__text">
+                With years of industry experience, we understand the importance
+                of timely and secure delivery of electronic components. Our high
+                delivery standards ensure that your products arrive on time and
+                in optimal condition, while our packaging standards ensure
+                maximum protection against any kind of damage.
+              </p>
+              <p class="benefits__text">
+                With our efficient and streamlined delivery process, you can
+                rest assured that there will be no bottlenecks or delays in
+                receiving your order.
+              </p>
+            </div>
+            <div class="services__list">
+              <ul class="benefits__items">
+                <li class="benefits__item benefits__item_2">
+                  <img
+                    class="benefits__item--img benefits__item--2"
+                    src="./images/benefits-2.jpg"
+                    alt="Benefits"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="benefits__item benefits__item_3">
+                  <img
+                    class="benefits__item--img benefits__item--3"
+                    src="./images/benefits-3.jpg"
+                    alt="Benefits"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="benefits__item benefits__item_4">
+                  <img
+                    class="benefits__item--img benefits__item--4"
+                    src="./images/benefits-4.jpg"
+                    alt="Benefits"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
     <footer></footer>
-    <script type="module" src="./public/js/home.js"></script>
+    <script src="./public/js/home.js"></script>
   </body>
 </html>
