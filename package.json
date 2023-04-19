@@ -1,8 +1,12 @@
 {
-  "name": "pria-webpack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesidoS/gm-electronics.git"
+  },
+  "homepage": "https://github.com/DesidoS/gm-electronics#readme",
+  "name": "gm-electronics",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "scripts": {
     "dev": "webpack --watch --mode development",
     "build": "webpack --watch --mode production",
