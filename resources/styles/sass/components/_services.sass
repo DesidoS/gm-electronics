@@ -1,0 +1,108 @@
+.services
+    padding: 56px 0 21px 0
+    @media (min-width: 1025px)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 47px 0 64px 0
+
+.services__list
+    position: relative
+    @media (min-width: 1025px)
+        height: 325px
+        width: 439px
+        padding: 0
+        margin: 0
+    @media (min-width: 1200px)
+        width: 527px
+
+.services__items
+    position: static
+    background-color: $accent-colors
+    height: 5px
+    width: calc( 100% - 1.5px )
+
+    @media (min-width: 1025px)
+        height: 322px
+    @media (min-width: 1200px)
+        height: 389px
+
+.services__item
+    position: absolute
+    top: 5px
+    opacity: 0
+    animation: slide 9s infinite
+    @media (min-width: 1025px)
+        left: 5px
+        width: 440px
+    @media (min-width: 1200px)
+        width: 527px
+
+.services__item--img
+    display: block
+    width: 100%
+
+.services__item_2
+    animation-delay: 0s
+
+.services__item_3
+    animation-delay: 3s
+
+.services__item_4
+    animation-delay: 6s
+
+@keyframes slide
+    0%
+        opacity: 0
+    10%
+        opacity: 1
+    35%
+        opacity: 1
+    40%
+        opacity: 0
+    100%
+        opacity: 0
+
+.services__content
+    margin-top: 80%
+    @media (min-width: 1025px)
+        margin-top: 0
+        width: 435px
+    @media (min-width: 1200px)
+        width: 483px
+
+.services__title
+    padding-top: 21px
+    padding-bottom: 14px
+
+    color: $white-color
+    font-size: 25px
+    font-weight: 700
+    line-height: 30px
+    letter-spacing: 0em
+    text-align: left
+    @media (min-width: 1025px)
+        font-size: 45px
+        line-height: 53px
+
+.services__subtitle
+    color: $stroke-color
+
+.services__text
+    color: $white-color
+
+    font-size: 16px
+    font-weight: 700
+    line-height: 22px
+    letter-spacing: 0em
+    text-align: justify
+    @media (min-width: 1025px)
+        font-weight: 400
+
+.services__text:first-of-type
+    margin-bottom: 20px
+
+.services__button
+    margin-top: 14px
+    @media (min-width: 1025px)
+        margin-top: 15px

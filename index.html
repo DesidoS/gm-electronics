@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=4.0"
+    />
+    <title>GM Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/home.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icon/favicon-16x16.png"
+    />
+    <style>
+      .hero-container {
+        background-image: url("./images/hero-bg-mobile.jpg");
+      }
+      @media (min-width: 1024px) {
+        .hero-container {
+          background-image: none;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hero__halfhex {
+          background-image: url("./images/half-hex.jpg");
+        }
+      }
+      .services-and-products-container {
+        background-image: url("images/services-mobile-bg.jpg");
+        background-size: cover;
+        min-height: 1828px;
+      }
+      @media (min-width: 1024px) {
+        .services-and-products-container {
+          background-image: url("images/services-desktop-bg.jpg");
+          background-size: cover;
+          height: 1275px;
+        }
+      }
+      .products__item--1 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-1.jpg");
+      }
+      .products__item--2 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-2.jpg");
+      }
+      .products__item--3 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-3.jpg");
+      }
+      .products__item--4 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-4.jpg");
+      }
+      .products__item--5 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-5.jpg");
+      }
+      .products__item--6 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-6.jpg");
+      }
+      .products__item--7 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-7.jpg");
+      }
+      .products__item--8 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-8.jpg");
+      }
+      .partners-container {
+        background-image: url("images/partners-mobile.jpg");
+      }
+      @media (min-width: 1024px) {
+        .partners-container {
+          background-image: url("images/partners-1024.jpg");
+        }
+      }
+      @media (min-width: 1920px) {
+        .partners-container {
+          background-image: url("images/partners-1920.jpg");
+        }
+      }
+      @media (min-width: 2560px) {
+        .partners-container {
+          background-image: url("images/partners-2560.jpg");
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link">
+            <svg aria-label="Logo" class="header__logo-svg">
+              <use href="./images/icon-sprite.svg#logo-header"></use>
+            </svg>
+            <svg aria-label="Logo" class="header__logo-svg--footer is-open">
+              <use href="./images/icon-sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">First screen</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#services-and-products" class="header__nav-link"
+                  >Services and Products</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Why work with us?</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Who we are?</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__contact">
+          <ul class="header__contact-list">
+            <li class="header__contact-item header__contact-item--geo">
+              <a
+                href="https://goo.gl/maps/u99Wnz6Vcq7GsEhx6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="header__contact-link"
+              >
+                <svg class="header__contact-svg">
+                  <use href="./images/icon-sprite.svg#geo"></use>
+                </svg>
+                5C77+QV2 Parakar 0069
+                <br />
+                <span> Yerevan, Armenia </span>
+              </a>
+            </li>
+            <li class="header__contact-item header__contact-item--mail">
+              <a href="mailto:info@gmg.am" class="header__contact-link">
+                <svg class="header__contact-svg header__contact-svg--mail">
+                  <use href="./images/icon-sprite.svg#letter"></use>
+                </svg>
+                info@gmg.am
+              </a>
+            </li>
+            <li class="header__contact-item">
+              <a href="tel:+374 98 88-88-05" class="header__contact-link">
+                <svg class="header__contact-svg header__contact-svg--phone">
+                  <use href="./images/icon-sprite.svg#phone"></use>
+                </svg>
+                +374 98 88-88-05</a
+              >
+            </li>
+            <li class="header__contact-item header__contact-item--request">
+              <a
+                href="tel:+380961111111"
+                class="header__contact-link header__contact-link--request"
+              >
+                Request a call
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__button-container">
+          <div class="header__lang">
+            <button class="header__lang-button">
+              EN&nbsp&nbspAR
+              <div class="header__lang-container">
+                <div class="header__lang-svg header__lang-svg--en">
+                  <svg class="header__lang-svg--img">
+                    <use href="./images/icon-sprite.svg#en"></use>
+                  </svg>
+                </div>
+                <div class="header__lang-svg header__lang-svg--ar arActive">
+                  <svg class="header__lang-svg--img">
+                    <use href="./images/icon-sprite.svg#ar"></use>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="header__menu-btn">
+            <button
+              type="button"
+              aria-expanded="false"
+              class="header__menu-button"
+            >
+              <div class="btn-container">
+                <svg aria-label="menu-switch" class="header__menu-close">
+                  <use href="./images/icon-sprite.svg#menu"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero__halfhex"></div>
+      <div class="hero-container">
+        <div class="container">
+          <section class="hero">
+            <div class="hero__content">
+              <div class="hero__logo" href="#">
+                <svg class="hero__logo-svg" aria-label="Logo">
+                  <use href="./images/icon-sprite.svg#logo-header"></use>
+                </svg>
+              </div>
+              <h1 class="hero__title">
+                Production and Supply Solutions
+                <span class="hero__subtitle">for Electronic Components</span>
+                <svg class="dot hero__subtitle-icon">
+                  <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                </svg>
+              </h1>
+              <p class="hero__description">
+                As one of the most reliable electronic parts suppliers in the
+                industry, we are dedicated to providing our customers with
+                top-quality electronic components, parts, and services. From
+                sourcing to delivery, we´ve got you covered.
+              </p>
+              <button class="button hero__contact-btn">
+                <svg class="button-svg hero__contact-container">
+                  <use href="./images/icon-sprite.svg#button-contact"></use>
+                  <text
+                    class="hero__contact-text"
+                    x="40%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                  >
+                    Contact us
+                  </text>
+                </svg>
+              </button>
+              <ul class="hero__contact-list">
+                <li class="hero__contact-item hero__contact-item--mail">
+                  <a href="mailto:info@gmg.am" class="hero__contact-link">
+                    <svg class="hero__contact-svg hero__contact-svg--mail">
+                      <use href="./images/icon-sprite.svg#letter"></use>
+                    </svg>
+                    <span class="hero__contact-item--addition"
+                      >E-Mail:&nbsp;</span
+                    >
+                    info@gmg.am
+                  </a>
+                </li>
+                <div class="hero__contact-container">
+                  <li class="hero__contact-item">
+                    <a href="tel:+374 98 88-88-05" class="hero__contact-link">
+                      <svg class="hero__contact-svg hero__contact-svg--phone">
+                        <use href="./images/icon-sprite.svg#phone"></use>
+                      </svg>
+                      <span class="hero__contact-item--addition"
+                        >Telefon:&nbsp;</span
+                      >
+                      +374 98 88-88-05</a
+                    >
+                  </li>
+                  <li class="hero__contact-item">
+                    <a
+                      href="tel:+380961111111"
+                      class="hero__contact-link hero__contact-link--request"
+                    >
+                      Request a call
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div
+              class="hero__image"
+              style="background-image: url('./images/Hero-img.jpg')"
+            ></div>
+
+            <div class="hero__arrow-container">
+              <button
+                onclick="location.href='#services-and-products'"
+                class="hero__arrow-btn"
+              >
+                <svg class="hero__arrow-btn--hex">
+                  <use href="./images/icon-sprite.svg#Hex"></use>
+                </svg>
+                <svg class="hero__arrow-btn--arrow">
+                  <use href="./images/icon-sprite.svg#Hex-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="services-and-products" class="services-and-products-container">
+        <div class="container">
+          <section class="services">
+            <div class="services__list">
+              <ul class="services__items">
+                <li class="services__item services__item_2">
+                  <img
+                    class="services__item--img services__item--2"
+                    src="./images/services_2.jpg"
+                    alt="Services & Products"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="services__item services__item_3">
+                  <img
+                    class="services__item--img services__item--3"
+                    src="./images/services_3.jpg"
+                    alt="Services & Products"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="services__item services__item_4">
+                  <img
+                    class="services__item--img services__item--4"
+                    src="./images/services_4.jpg"
+                    alt="Services & Products"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="services__content">
+              <h2 class="services__title">
+                Services &amp; <span class="services__subtitle">Products</span>
+                <svg class="dot services__dot" fill="#fff">
+                  <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                </svg>
+              </h2>
+              <p class="services__text">
+                We maintain a vast warehouse of electronic parts and components,
+                continuously expanding to meet your evolving needs. To achieve
+                this, we acquire excess stock and obsolete components that are
+                not readily available elsewhere. Furthermore, we are pleased to
+                facilitate the special procurement of components that are not
+                accessible through traditional delivery channels.
+              </p>
+              <p class="services__text">
+                GM Global is offering a wide range of electronic components,
+                each designed to deliver optimal performance and reliability.
+              </p>
+              <button class="button services__button">
+                <svg class="button-svg">
+                  <use href="./images/icon-sprite.svg#button-contact"></use>
+                  <text
+                    x="40%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    class="hero__contact-text"
+                  >
+                    Contact us
+                  </text>
+                </svg>
+              </button>
+            </div>
+          </section>
+          <section class="products">
+            <ul class="products__list">
+              <li class="products__item products__item--1">
+                <h3 class="products__title">Discrete Semiconductors</h3>
+                <p class="products__description">
+                  These components are designed for a specific application and
+                  operate as single units. They include transistors, diodes, and
+                  thyristors, among others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+              <li class="products__item products__item--2">
+                <h3 class="products__title">
+                  Integrated Processors and Controllers
+                </h3>
+                <p class="products__description">
+                  These components are designed to perform a specific function,
+                  such as controlling a motor or processing data. They include
+                  microcontrollers, digital signal processors, and
+                  field-programmable gate arrays (FPGAs), among others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+              <li class="products__item products__item--3">
+                <h3 class="products__title">Integrated circuits</h3>
+                <p class="products__description">
+                  These components combine multiple electronic components into a
+                  single chip, enabling efficient and cost-effective operation.
+                  They include operational amplifiers, voltage regulators, and
+                  logic gates, among others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+              <li class="products__item products__item--4">
+                <h3 class="products__title">LED lights</h3>
+                <p class="products__description">
+                  Our selection of LED lights offers efficient and long-lasting
+                  lighting solutions for a range of applications. They include
+                  standard bulbs, strip lights, and modules, among others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+              <li class="products__item products__item--5">
+                <h3 class="products__title">HF Semiconductors</h3>
+                <p class="products__description">
+                  These high-frequency semiconductors are designed for use in
+                  radio frequency (RF) applications. They include amplifiers,
+                  oscillators, and transceivers, among others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+              <li class="products__item products__item--6">
+                <h3 class="products__title">Memory ICs</h3>
+                <p class="products__description">
+                  Our memory ICs are used to store and retrieve digital
+                  information. They include ROM, RAM, and flash memory, among
+                  others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+              <li class="products__item products__item--7">
+                <h3 class="products__title">Sensors</h3>
+                <p class="products__description">
+                  Our range of sensors includes components that detect and
+                  measure physical quantities such as temperature, pressure, and
+                  light. They include accelerometers, gyroscopes, and
+                  temperature sensors, among others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+              <li class="products__item products__item--8">
+                <h3 class="products__title">Optoelectronics</h3>
+                <p class="products__description">
+                  Our optoelectronics components combine electronics and optics
+                  to enable communication and sensing through light. They
+                  include photodiodes, LEDs, and fiber optic transceivers, among
+                  others.
+                </p>
+                <svg class="products__icon">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="partners-container">
+        <div class="container">
+          <section class="partners partners--section">
+            <h2 class="partners__title">
+              Working <span class="partners__subtitle">with:</span>
+            </h2>
+            <div class="splide" aria-label="Basic Structure Example">
+              <div class="splide__track">
+                <ul class="partners__list splide__list">
+                  <li class="partners__item splide__slide">
+                    <a class="partners__link" href="#">
+                      <svg class="partners__icon partners__icon--digi-key">
+                        <use href="./images/icon-sprite.svg#digi-key"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="partners__item splide__slide">
+                    <a class="partners__link" href="#">
+                      <svg class="partners__icon partners__icon--mouser">
+                        <use href="./images/icon-sprite.svg#mouser"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="partners__item splide__slide">
+                    <a class="partners__link" href="#">
+                      <svg class="partners__icon partners__icon--rs">
+                        <use href="./images/icon-sprite.svg#rs"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="partners__item splide__slide">
+                    <a class="partners__link" href="#">
+                      <svg class="partners__icon partners__icon--microchip">
+                        <use href="./images/icon-sprite.svg#microchip"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="partners__item splide__slide">
+                    <a class="partners__link" href="#">
+                      <svg class="partners__icon partners__icon--hubersuhner">
+                        <use href="./images/icon-sprite.svg#hubersuhner"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="partners__item splide__slide">
+                    <a class="partners__link" href="#">
+                      <svg class="partners__icon partners__icon--texas">
+                        <use href="./images/icon-sprite.svg#texas"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="partners__item splide__slide">
+                    <a class="partners__link" href="#">
+                      <svg class="partners__icon partners__icon--tti">
+                        <use href="./images/icon-sprite.svg#tti"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="/public/js/home.js"></script>
+  </body>
+</html>

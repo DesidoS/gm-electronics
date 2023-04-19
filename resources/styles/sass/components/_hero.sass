@@ -1,0 +1,205 @@
+.hero
+  padding-bottom: 108px
+  @media (min-width: 1025px)
+    margin-top: 60px
+    padding-bottom: 58px
+
+.hero-container
+  background-size: cover
+  height: 680px
+  @media (min-width: 1025px)
+    position: relative
+    height: auto
+
+.hero
+  position: relative
+
+.hero__content
+  padding-top: 50px
+  margin: 0 auto
+  @media (min-width: 1025px)
+    padding-top: 0
+    margin: 0
+    width: 523px
+
+.hero__logo
+  margin-bottom: 26px
+  @media (min-width: 1025px)
+    display: none
+
+.hero__logo-svg
+  height: 75px
+  width: 236.7px
+
+.hero__title
+  margin-bottom: 18px
+  font-size: 25px
+  font-weight: 700
+  line-height: 30px
+  letter-spacing: 0em
+  text-align: justified
+  color: $general-text-color
+  @media (min-width: 1025px)
+    margin-bottom: 20px
+    font-size: 45px
+    line-height: 53px
+
+.hero__subtitle
+  color: $second-color
+
+.hero__subtitle-icon
+  fill: $accent-colors
+
+.hero__description
+  color: $second-color
+  text-align: justify
+  font-size: 16px
+  font-weight: 700
+  line-height: 22px
+  letter-spacing: 0em
+  @media (min-width: 1025px)
+    font-weight: 400
+
+.hero__contact-btn
+  margin-top: 13px
+  @media (min-width: 1025px)
+    margin-top: 11px
+
+.hero__contact-list
+  display: flex
+  flex-direction: column
+  margin-top: 34px
+  color: $second-color
+  @media (min-width: 1025px)
+    margin-top: 81px
+
+.hero__contact-link
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  font-size: 15px
+  font-weight: 400
+  line-height: 20px
+  letter-spacing: 0em
+  transition: color 0.25s ease
+  color: inherit
+
+  @media (min-width: 1025px)
+    align-items: baseline
+    color: $second-color
+
+  &:hover, &:focus
+    color: $hover-second-color
+
+.hero__contact-item--mail
+  margin-bottom: 13px
+  @media (min-width: 1025px)
+    margin: 0
+
+.hero__contact-container
+  @media (min-width: 1025px)
+    display: flex
+    margin-top: 13px
+    align-items: baseline
+
+.hero__contact-link--request
+  margin-left: 30px
+  color: $active-color
+  border-color: $active-color
+  border-bottom: 1.5px dashed $active-color
+  width: max-content
+  font-size: 14px
+  font-weight: 700
+  line-height: 19px
+  letter-spacing: 0em
+  text-align: left
+
+  @media (min-width: 1025px)
+    margin-left: 7px
+    transition: all 0.3s ease-in-out
+
+.hero__contact-link--request:hover,
+.hero__contact-link--request:focus
+  color: $accent-colors
+  border-bottom-color: $accent-colors
+
+.hero__contact-svg
+  width: 14px
+  height: 17px
+  margin-right: 11px
+  &--mail
+    width: 18px
+    height: 13.5px
+    &--phone
+      width: 17px
+      height: 17px
+
+.hero__contact-svg--phone
+  opacity: 0.5
+
+.hero__image
+  right: 0px
+  @media (min-width: 1025px)
+    position: absolute
+    background-size: cover
+    height: 428px
+    width: 428px
+    top: 0
+  @media (min-width: 1200px)
+    right: -30px
+
+.hero__arrow-container
+  position: absolute
+  left: 50%
+  top: 605px
+  transform: translate(-50%, 0)
+  @media (min-width: 1025px)
+    position: absolute
+    top: 421px
+
+.hero__arrow-btn
+  position: relative
+  border: none
+  background-color: transparent
+  cursor: pointer
+  &:hover .hero__arrow-btn--hex,
+  &:focus .hero__arrow-btn--hex
+    stroke: $stroke-color
+
+.hero__arrow-btn--hex
+  width: 45.66px
+  height: 52.75px
+  stroke: #c1c1c1
+  transition: stroke 1s ease
+  @media (min-width: 1025px)
+    width: 63.53px
+    height: 73.65px
+
+.hero__arrow-btn--arrow
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 15.88px
+  height: 8.99px
+
+  pointer-events: auto
+  fill: #c1c1c1
+  transition: transform 0.5s ease, color 0.5s ease
+  @media (min-width: 1025px)
+    width: 22.09px
+    height: 12.55px
+
+.hero__arrow-btn:hover .hero__arrow-btn--arrow,
+.hero__arrow-btn:focus .hero__arrow-btn--arrow
+  fill: $second-color
+  transform: translate(-50%, 0)
+
+.hero__halfhex
+  background-repeat: no-repeat
+  background-size: contain
+  position: absolute
+  right: 0
+  width: 111px
+  height: 551px

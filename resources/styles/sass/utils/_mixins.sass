@@ -1,0 +1,30 @@
+$bp-small: 360px
+$bp-medium: 768px
+$bp-large: 1024px
+$bp-xl: 1200px
+$bp-xxl: 1920px
+$bp-xxxl: 2560px
+
+@mixin small-screen
+  @media screen and (min-width: $bp-small)
+    @content
+
+@mixin medium-screen
+  @media screen and (min-width: $bp-medium)
+    @content
+
+@mixin large-screen
+  @media screen and (min-width: $bp-large)
+    @content
+
+@mixin xl-screen
+  @media screen and (min-width: $bp-xl)
+    @content
+
+@mixin xxl-screen
+  @media screen and (min-width: $bp-xxl)
+    @content
+
+@mixin xxxl-screen
+  @media screen and (min-width: $bp-xxxl)
+    @content

@@ -1,0 +1,62 @@
+*
+	position: relative
+
+picture
+	display: table // Allows to add something in picture (added for admin-edit)
+	>img
+		display: flex // Fix for small space after img, made by display:inline elements, which img is
+
+// Scrollbar START
+::-webkit-scrollbar-track
+	border-width: 0
+	background-color: transparent
+
+::-webkit-scrollbar-track
+	border-width: 0
+	background-color: #CCCCCC
+	border-radius: 10px
+
+::-webkit-scrollbar-thumb
+	//background-color: #292a4e
+	background-color: black
+	border-radius: 10px
+
+::-webkit-scrollbar
+	width: 7px
+	height: 10px
+
+/* scrollbar for Firefox browser */
+html, body, .custom-scrollbar-ff
+	scrollbar-width: thin
+	scrollbar-color: black #ccc
+
+// Scrollbar END
+
+body
+	width: 100vw
+	min-height: 100vh
+	overflow-x: hidden
+
+#scroll-content
+	height: 100%
+	overflow-y: scroll
+	overflow-x: hidden
+
+.Background_Is_Picture
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+
+.Img_As_Background
+	position: absolute
+	width: 100%
+	height: 100%
+	object-fit: cover
+	object-position: top
+	top: 0
+
+////////
+main
+	padding-top: 83px
+	@media  (min-width: 1025px)
+		padding-top: 92px
