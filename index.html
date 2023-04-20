@@ -134,7 +134,25 @@
       }
       @media (min-width: 1920px) {
         .benefits-second-background {
-          background-image: url("images/benefits-second-bg.jpg");
+          background-image: url("images/benefits-second-bg.png");
+        }
+      }
+      .statistic-container {
+        background-image: url("images/statistic-bg.jpg");
+      }
+      @media (min-width: 1025px) {
+        .statistic-container {
+          background-image: url("images/statistic-bg-1024.jpg");
+        }
+      }
+      @media (min-width: 1920px) {
+        .statistic-container {
+          background-image: url("images/statistic-bg-1920.jpg");
+        }
+      }
+      @media (min-width: 2560px) {
+        .statistic-container {
+          background-image: url("images/statistic-bg-2560.jpg");
         }
       }
     </style>
@@ -637,6 +655,80 @@
                     alt="Benefits"
                     loading="lazy"
                   />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="statistic-container">
+        <div class="statistic-background"></div>
+        <div class="statistic-second-background"></div>
+        <div class="container">
+          <section class="statistic">
+            <div class="statistic__content">
+              <h2 class="statistic__title statistic__title-mobile">
+                We are in
+                <span class="statistic__subtitle"
+                  >numbers
+                  <svg class="dot statistic__dot" fill="#fff">
+                    <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                  </svg>
+                </span>
+              </h2>
+              <h2 class="statistic__title statistic__title-desktop">
+                Facts
+                <span class="statistic__subtitle"
+                  >& Figures
+                  <svg class="dot statistic__dot" fill="#fff">
+                    <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                  </svg>
+                </span>
+              </h2>
+              <p class="statistic__text">
+                GM Global is offering a wide range of electronic components,
+                each designed to deliver optimal performance and reliability.
+              </p>
+            </div>
+            <div class="statistic__list">
+              <ul class="statistic__items">
+                <li class="statistic__item statistic__item_1">
+                  <svg class="statistic__item--icon statistic__item--icon--1">
+                    <use
+                      href="./images/icon-sprite.svg#years-average-team-experience"
+                    ></use>
+                  </svg>
+                  <h3 class="statistic__item--title">10</h3>
+                  <p class="statistic__item--description">
+                    Years average Team Experience
+                  </p>
+                </li>
+                <li class="statistic__item statistic__item_2">
+                  <svg class="statistic__item--icon statistic__item--icon--2">
+                    <use
+                      href="./images/icon-sprite.svg#delivery-per-month"
+                    ></use>
+                  </svg>
+                  <h3 class="statistic__item--title">>100</h3>
+                  <p class="statistic__item--description">Delivery per Month</p>
+                </li>
+                <li class="statistic__item statistic__item_3">
+                  <svg class="statistic__item--icon statistic__item--icon--3">
+                    <use
+                      href="./images/icon-sprite.svg#average-retention-rate"
+                    ></use>
+                  </svg>
+                  <h3 class="statistic__item--title">92%</h3>
+                  <p class="statistic__item--description">
+                    Average Retention Rate
+                  </p>
+                </li>
+                <li class="statistic__item statistic__item_4">
+                  <svg class="statistic__item--icon statistic__item--icon--4">
+                    <use href="./images/icon-sprite.svg#founded-in"></use>
+                  </svg>
+                  <h3 class="statistic__item--title">2020</h3>
+                  <p class="statistic__item--description">Founded in</p>
                 </li>
               </ul>
             </div>
