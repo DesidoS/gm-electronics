@@ -6,6 +6,7 @@ const splideOptions = {
   perMove: 1,
   gap: 30,
   pagination: false,
+  autoWidth: true,
   arrows: false,
   drag: true,
   keyboard: true,
