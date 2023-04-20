@@ -37,14 +37,14 @@
       }
       .services-and-products-container {
         background-image: url("images/services-mobile-bg.jpg");
-        background-size: cover;
-        min-height: 1828px;
+        background-size: contain;
+        /* min-height: 1828px; */
       }
       @media (min-width: 1025px) {
         .services-and-products-container {
           background-image: url("images/services-desktop-bg.jpg");
           background-size: cover;
-          height: 1275px;
+          /* height: 1275px; */
         }
       }
       .products__item--1 {
@@ -153,6 +153,27 @@
       @media (min-width: 2560px) {
         .statistic-container {
           background-image: url("images/statistic-bg-2560.jpg");
+        }
+      }
+      .organization-container {
+        background-image: url("images/organization.jpg");
+        /* background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center; */
+      }
+      @media (min-width: 1025px) {
+        .organization-container {
+          background-image: url("images/organization-1025.jpg");
+        }
+      }
+      @media (min-width: 1920px) {
+        .organization-container {
+          background-image: url("images/organization-1920.jpg");
+        }
+      }
+      @media (min-width: 2560px) {
+        .organization-container {
+          background-image: url("images/organization-2560.jpg");
         }
       }
     </style>
@@ -663,7 +684,6 @@
       </div>
       <div class="statistic-container">
         <div class="statistic-background"></div>
-        <div class="statistic-second-background"></div>
         <div class="container">
           <section class="statistic">
             <div class="statistic__content">
@@ -732,6 +752,18 @@
                 </li>
               </ul>
             </div>
+          </section>
+        </div>
+      </div>
+      <div class="organization-container">
+        <div class="container">
+          <section class="organization">
+            <h2 class="organization__title">
+              Precise logistics tailored to your needs
+              <svg class="dot organization__dot" fill="#48B57F">
+                <use href="./images/icon-sprite.svg#hexagon-green"></use>
+              </svg>
+            </h2>
           </section>
         </div>
       </div>
