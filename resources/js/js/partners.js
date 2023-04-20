@@ -2,12 +2,13 @@ import Splide from "@splidejs/splide";
 
 const splideOptions = {
   type: "loop",
-  perPage: 3,
-  perMove: 1,
-  gap: 30,
   pagination: false,
-  autoWidth: true,
   arrows: false,
+  autoWidth: true,
+  lazyLoad: "nearby",
+  perPage: 1,
+  speed: 500,
+  gap: 30,
   drag: true,
   keyboard: true,
   mediaQuery: "min",
