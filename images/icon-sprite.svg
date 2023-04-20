@@ -239,5 +239,26 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M204.502 37L183.052 0H189.049L210.5 37H204.502Z" />
 <path fill-rule="evenodd" clip-rule="evenodd" d="M153.062 0L174.513 37H0.499649V0L153.062 0Z" />
 </symbol>
+<symbol id="step-7" viewBox="0 0 28 32">
+<path fill="#ffb490" style="fill: var(--color1, #ffb490); stroke: var(--color2, #f47133)" stroke="#f47133" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" d="M14.222 2.37l11.852 6.815v13.629l-11.852 6.815-11.852-6.815v-13.629l11.852-6.815z"></path>
+</symbol>
+<symbol id="step-6" viewBox="0 0 28 32">
+<path fill="#b2ffd9" style="fill: var(--color3, #b2ffd9); stroke: var(--color4, #ff9a6a)" stroke="#ff9a6a" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" d="M14.222 2.37l11.852 6.815v13.629l-11.852 6.815-11.852-6.815v-13.629l11.852-6.815z"></path>
+</symbol>
+<symbol id="step-5" viewBox="0 0 28 32">
+<path fill="#b2ffd9" style="fill: var(--color3, #b2ffd9); stroke: var(--color5, #48b57f)" stroke="#48b57f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" d="M14.222 2.37l11.852 6.815v13.629l-11.852 6.815-11.852-6.815v-13.629l11.852-6.815z"></path>
+</symbol>
+<symbol id="step-4" viewBox="0 0 28 32">
+<path fill="#fff" style="fill: var(--color6, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" stroke="#000" d="M14.222 2.37l11.852 6.815v13.629l-11.852 6.815-11.852-6.815v-13.629l11.852-6.815z"></path>
+</symbol>
+<symbol id="step-2" viewBox="0 0 28 32">
+<path fill="#fff" style="fill: var(--color6, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" stroke="#000" d="M14.222 2.37l11.852 6.815v13.629l-11.852 6.815-11.852-6.815v-13.629l11.852-6.815z"></path>
+</symbol>
+<symbol id="step-3" viewBox="0 0 28 32">
+<path fill="#fff" style="fill: var(--color6, #fff); stroke: var(--color5, #48b57f)" stroke="#48b57f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" d="M14.222 2.37l11.852 6.815v13.629l-11.852 6.815-11.852-6.815v-13.629l11.852-6.815z"></path>
+</symbol>
+<symbol id="step-1" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color6, #fff); stroke: var(--color7, #a9a9a9)" stroke="#a9a9a9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" d="M29.63 16l-6.815 11.852h-13.629l-6.815-11.852 6.815-11.852h13.629l6.815 11.852z"></path>
+
 </defs>
 </svg>

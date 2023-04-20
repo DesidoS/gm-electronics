@@ -38,16 +38,22 @@
       .services-and-products-container {
         background-image: url("images/services-mobile-bg.jpg");
         background-size: contain;
-        /* min-height: 1828px; */
       }
       @media (min-width: 1025px) {
         .services-and-products-container {
           background-image: url("images/services-desktop-bg.jpg");
           background-size: cover;
-          /* height: 1275px; */
         }
       }
-      .products__item--1 {
+      .products__item-wrap--1 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
+          ),
+          url("./images/products-1.jpg");
+      }
+      .active .products__item-wrap--1 {
         background-image: linear-gradient(
             to right,
             rgba(6, 10, 17, 0.97),
@@ -55,59 +61,59 @@
           ),
           url("./images/products-1.jpg");
       }
-      .products__item--2 {
+      .products__item-wrap--2 {
         background-image: linear-gradient(
             to right,
-            rgba(6, 10, 17, 0.97),
-            rgba(6, 10, 17, 0.97)
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
           ),
           url("./images/products-2.jpg");
       }
-      .products__item--3 {
+      .products__item-wrap--3 {
         background-image: linear-gradient(
             to right,
-            rgba(6, 10, 17, 0.97),
-            rgba(6, 10, 17, 0.97)
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
           ),
           url("./images/products-3.jpg");
       }
-      .products__item--4 {
+      .products__item-wrap--4 {
         background-image: linear-gradient(
             to right,
-            rgba(6, 10, 17, 0.97),
-            rgba(6, 10, 17, 0.97)
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
           ),
           url("./images/products-4.jpg");
       }
-      .products__item--5 {
+      .products__item-wrap--5 {
         background-image: linear-gradient(
             to right,
-            rgba(6, 10, 17, 0.97),
-            rgba(6, 10, 17, 0.97)
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
           ),
           url("./images/products-5.jpg");
       }
-      .products__item--6 {
+      .products__item-wrap--6 {
         background-image: linear-gradient(
             to right,
-            rgba(6, 10, 17, 0.97),
-            rgba(6, 10, 17, 0.97)
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
           ),
           url("./images/products-6.jpg");
       }
-      .products__item--7 {
+      .products__item-wrap--7 {
         background-image: linear-gradient(
             to right,
-            rgba(6, 10, 17, 0.97),
-            rgba(6, 10, 17, 0.97)
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
           ),
           url("./images/products-7.jpg");
       }
-      .products__item--8 {
+      .products__item-wrap--8 {
         background-image: linear-gradient(
             to right,
-            rgba(6, 10, 17, 0.97),
-            rgba(6, 10, 17, 0.97)
+            rgba(6, 10, 17, 0.9),
+            rgba(6, 10, 17, 0.9)
           ),
           url("./images/products-8.jpg");
       }
@@ -158,8 +164,8 @@
       .organization-container {
         background-image: url("images/organization.jpg");
         /* background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center center; */
+        /* background-repeat: no-repeat; */
+        /* background-position: center center; */
       }
       @media (min-width: 1025px) {
         .organization-container {
@@ -174,6 +180,33 @@
       @media (min-width: 2560px) {
         .organization-container {
           background-image: url("images/organization-2560.jpg");
+        }
+      }
+      .process-container {
+        background-image: url("images/process-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      @media (min-width: 1025px) {
+        .process-container {
+          background-image: url("images/process-bg-1024.jpg");
+          background-position: top right;
+          background-size: contain;
+        }
+      }
+      @media (min-width: 1920px) {
+        .process-container {
+          background-image: url("images/process-bg-1920.jpg");
+          background-position: top right;
+          background-size: contain;
+        }
+      }
+      @media (min-width: 1025px) {
+        .process {
+          background-image: url("images/process-bg-text.png");
+          background-position: left center;
+          background-size: 239px;
+          background-repeat: no-repeat;
         }
       }
     </style>
@@ -455,98 +488,115 @@
           <section class="products">
             <ul class="products__list">
               <li class="products__item products__item--1">
-                <h3 class="products__title">Discrete Semiconductors</h3>
-                <p class="products__description">
-                  These components are designed for a specific application and
-                  operate as single units. They include transistors, diodes, and
-                  thyristors, among others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--1">
+                  <h3 class="products__title">Discrete Semiconductors</h3>
+                  <p class="products__description">
+                    These components are designed for a specific application and
+                    operate as single units. They include transistors, diodes,
+                    and thyristors, among others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
               <li class="products__item products__item--2">
-                <h3 class="products__title">
-                  Integrated Processors and Controllers
-                </h3>
-                <p class="products__description">
-                  These components are designed to perform a specific function,
-                  such as controlling a motor or processing data. They include
-                  microcontrollers, digital signal processors, and
-                  field-programmable gate arrays (FPGAs), among others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--2">
+                  <h3 class="products__title">
+                    Integrated Processors and Controllers
+                  </h3>
+                  <p class="products__description">
+                    These components are designed to perform a specific
+                    function, such as controlling a motor or processing data.
+                    They include microcontrollers, digital signal processors,
+                    and field-programmable gate arrays (FPGAs), among others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
               <li class="products__item products__item--3">
-                <h3 class="products__title">Integrated circuits</h3>
-                <p class="products__description">
-                  These components combine multiple electronic components into a
-                  single chip, enabling efficient and cost-effective operation.
-                  They include operational amplifiers, voltage regulators, and
-                  logic gates, among others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--3">
+                  <h3 class="products__title">Integrated circuits</h3>
+                  <p class="products__description">
+                    These components combine multiple electronic components into
+                    a single chip, enabling efficient and cost-effective
+                    operation. They include operational amplifiers, voltage
+                    regulators, and logic gates, among others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
               <li class="products__item products__item--4">
-                <h3 class="products__title">LED lights</h3>
-                <p class="products__description">
-                  Our selection of LED lights offers efficient and long-lasting
-                  lighting solutions for a range of applications. They include
-                  standard bulbs, strip lights, and modules, among others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--4">
+                  <h3 class="products__title">LED lights</h3>
+                  <p class="products__description">
+                    Our selection of LED lights offers efficient and
+                    long-lasting lighting solutions for a range of applications.
+                    They include standard bulbs, strip lights, and modules,
+                    among others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
               <li class="products__item products__item--5">
-                <h3 class="products__title">HF Semiconductors</h3>
-                <p class="products__description">
-                  These high-frequency semiconductors are designed for use in
-                  radio frequency (RF) applications. They include amplifiers,
-                  oscillators, and transceivers, among others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--5">
+                  <h3 class="products__title">HF Semiconductors</h3>
+                  <p class="products__description">
+                    These high-frequency semiconductors are designed for use in
+                    radio frequency (RF) applications. They include amplifiers,
+                    oscillators, and transceivers, among others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
               <li class="products__item products__item--6">
-                <h3 class="products__title">Memory ICs</h3>
-                <p class="products__description">
-                  Our memory ICs are used to store and retrieve digital
-                  information. They include ROM, RAM, and flash memory, among
-                  others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--6">
+                  <h3 class="products__title">Memory ICs</h3>
+                  <p class="products__description">
+                    Our memory ICs are used to store and retrieve digital
+                    information. They include ROM, RAM, and flash memory, among
+                    others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
               <li class="products__item products__item--7">
-                <h3 class="products__title">Sensors</h3>
-                <p class="products__description">
-                  Our range of sensors includes components that detect and
-                  measure physical quantities such as temperature, pressure, and
-                  light. They include accelerometers, gyroscopes, and
-                  temperature sensors, among others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--7">
+                  <h3 class="products__title">Sensors</h3>
+                  <p class="products__description">
+                    Our range of sensors includes components that detect and
+                    measure physical quantities such as temperature, pressure,
+                    and light. They include accelerometers, gyroscopes, and
+                    temperature sensors, among others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
               <li class="products__item products__item--8">
-                <h3 class="products__title">Optoelectronics</h3>
-                <p class="products__description">
-                  Our optoelectronics components combine electronics and optics
-                  to enable communication and sensing through light. They
-                  include photodiodes, LEDs, and fiber optic transceivers, among
-                  others.
-                </p>
-                <svg class="products__icon">
-                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
-                </svg>
+                <div class="products__item-wrap products__item-wrap--8">
+                  <h3 class="products__title">Optoelectronics</h3>
+                  <p class="products__description">
+                    Our optoelectronics components combine electronics and
+                    optics to enable communication and sensing through light.
+                    They include photodiodes, LEDs, and fiber optic
+                    transceivers, among others.
+                  </p>
+                  <svg class="products__icon">
+                    <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                  </svg>
+                </div>
               </li>
             </ul>
           </section>
@@ -764,6 +814,100 @@
                 <use href="./images/icon-sprite.svg#hexagon-green"></use>
               </svg>
             </h2>
+          </section>
+        </div>
+      </div>
+      <div class="process-container">
+        <div class="container">
+          <section class="process">
+            <h2 class="process__title">
+              How <span class="process__subtitle"> we work </span>
+              <svg class="dot process__dot" fill="#48B57F">
+                <use href="./images/icon-sprite.svg#hexagon-green"></use>
+              </svg>
+            </h2>
+            <div class="process__list">
+              <div class="process__line"></div>
+              <ul class="process__items">
+                <li class="process__item">
+                  <svg class="process__item--dot">
+                    <use href="./images/icon-sprite.svg#step-1"></use>
+                  </svg>
+                  <div>
+                    <h3 class="process__item--title">Step 1.</h3>
+                    <p class="process__item--description">
+                      Receive request of products or services according to
+                      clients needs
+                    </p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <svg class="process__item--dot">
+                    <use href="./images/icon-sprite.svg#step-2"></use>
+                  </svg>
+                  <div>
+                    <h3 class="process__item--title">Step 2.</h3>
+                    <p class="process__item--description">
+                      Requirement analysis and order planning
+                    </p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <svg class="process__item--dot">
+                    <use href="./images/icon-sprite.svg#step-3"></use>
+                  </svg>
+                  <div>
+                    <h3 class="process__item--title">Step 3.</h3>
+                    <p class="process__item--description">
+                      Production and customization 
+                    </p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <svg class="process__item--dot">
+                    <use href="./images/icon-sprite.svg#step-4"></use>
+                  </svg>
+                  <div>
+                    <h3 class="process__item--title">Step 4.</h3>
+                    <p class="process__item--description">
+                      Preparation for product delivery 
+                    </p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <svg class="process__item--dot">
+                    <use href="./images/icon-sprite.svg#step-5"></use>
+                  </svg>
+                  <div>
+                    <h3 class="process__item--title">Step 5.</h3>
+                    <p class="process__item--description">
+                      Secure delivery on schedule date
+                    </p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <svg class="process__item--dot">
+                    <use href="./images/icon-sprite.svg#step-6"></use>
+                  </svg>
+                  <div>
+                    <h3 class="process__item--title">Step 6.</h3>
+                    <p class="process__item--description">
+                      Continuation of cooperation (go step 1)
+                    </p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <svg class="process__item--dot">
+                    <use href="./images/icon-sprite.svg#step-7"></use>
+                  </svg>
+                  <div>
+                    <h3 class="process__item--title process__item--title--last">
+                      Precise logistics tailored to your needs 
+                    </h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </div>
