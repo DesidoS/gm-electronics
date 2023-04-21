@@ -3,10 +3,6 @@
     @media (min-width: 1025px)
         padding: 64px 0 62px 0
 
-.products__item-wrap--7
-    top: 0
-    bottom: auto
-
 .products__item .products__item-wrap
     transition: all 1s ease
 
@@ -16,6 +12,15 @@
     padding: 23px 20px 23px 20px
     background-size: cover
     background-position: center
+
+.products__item-wrap--7
+    top: 0
+    bottom: auto
+
+.products__item-wrap--8
+    border-top: 3px solid $second-color
+    bottom: 0
+    height: 122px
 
 .products__item
     display: flex
@@ -39,6 +44,8 @@
         bottom: auto
 
     &.active .products__item-wrap--8
+        border-top: none
+
         top: auto
         bottom: 0
 

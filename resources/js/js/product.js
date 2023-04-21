@@ -4,6 +4,9 @@ items.forEach((item) => {
   item.addEventListener("click", (event) => {
     items.forEach((el) => {
       if (el !== event.currentTarget) {
+        if (el.style.zIndex > 1) {
+          el.style.zIndex = 1;
+        }
         el.classList.remove("active");
       }
     });
@@ -31,7 +34,7 @@ const body = document.querySelector("body"),
   observ = new MutationObserver(() => {
     const itemsActive = document.querySelector(".products__item.active");
     if (itemsActive) {
-      itemsActive.style.zIndex = 2;
+      itemsActive.style.zIndex = 4;
       itemsActive.addEventListener("click", (e) => {
         setTimeout(() => {
           itemsActive.style.zIndex = 1;
