@@ -258,7 +258,8 @@
 <path fill="#fff" style="fill: var(--color6, #fff); stroke: var(--color5, #48b57f)" stroke="#48b57f" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" d="M14.222 2.37l11.852 6.815v13.629l-11.852 6.815-11.852-6.815v-13.629l11.852-6.815z"></path>
 </symbol>
 <symbol id="step-1" viewBox="0 0 32 32">
-<path fill="#fff" style="fill: var(--color6, #fff); stroke: var(--color7, #a9a9a9)" stroke="#a9a9a9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="22.9256" stroke-width="3.5556" d="M29.63 16l-6.815 11.852h-13.629l-6.815-11.852 6.815-11.852h13.629l6.815 11.852z"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2L17.0004 4.87467L22 7.75022V13.4996V19.2498L17.0004 22.1244L12 25L6.99955 22.1244L2 19.2498V13.4996V7.75022L6.99955 4.87467L12 2Z" fill="white" stroke="#A9A9A9" stroke-width="3" stroke-miterlimit="22.9256"/>
+</symbol>
 
 </defs>
 </svg>

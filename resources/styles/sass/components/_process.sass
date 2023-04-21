@@ -10,6 +10,33 @@
     height: 23px
     @media (min-width: 1025px)
         top: 10px
+        &--loyalty
+            top: 110%
+            left: auto
+            right: 0
+
+.process__item--dot--1
+    left: 16px
+    width: 28px
+    height: 30px
+    @media (min-width: 1025px)
+        left: 17px
+
+.process__item--dot--line
+    @media (min-width: 1025px)
+        position: absolute
+        height: 130px
+        top: 31px
+        left: 27px
+        border-left: 1px dashed $process-subtitle-color
+.process__item--dot--odd
+    @media (min-width: 1025px)
+        position: absolute
+        height: 31px
+        top: -20px
+        left: 27px
+        border-left: 1px dashed $process-subtitle-color
+
 .process__title
     color: $general-text-color
 
@@ -40,6 +67,16 @@
     border-left: 1px dashed $process-subtitle-color
     @media (min-width: 768px)
         height: 85%
+    @media (min-width: 1025px)
+        border-left: none
+        border-bottom: 1px dashed $process-subtitle-color
+        width: 1035px
+        height: 0
+        top: 200px
+        left: -70px
+    @media (min-width: 1200px)
+        width: 1125px
+        left: 0
 
 .process__items
     @media (min-width: 1025px)
@@ -50,10 +87,11 @@
     padding: 0 29px 17px 76px
     @media (min-width: 1025px)
         padding: 0 0 60px 60px
-        flex-basis: 33%
+        flex-basis: 25%
         &:nth-child(1)
             order: 1
         &:nth-child(2)
+            margin-left: 28px
             order: 4
         &:nth-child(3)
             order: 2
@@ -66,10 +104,9 @@
         &:nth-child(7)
             order: 7
             position: absolute
-            top: 60%
-            right: -20%
-            transform: translate(0, -100%)
-            width: 390px
+            top: 25%
+            right: 0
+            width: 370px
             padding: 0
 
 .process__item--title
@@ -80,18 +117,17 @@
     line-height: 30px
     letter-spacing: 0em
     text-align: left
-
-    &--last
-        color: $btn-active-second-color
-        @media (min-width: 1025px)
-            font-size: 22px
-            font-weight: 400
-            text-align: right
-
     @media (min-width: 1025px)
         font-size: 35px
         font-weight: 600
         line-height: 48px
+
+    &--loyalty
+        color: $btn-active-second-color
+        @media (min-width: 1025px)
+            font-weight: 400
+            line-height: 30px
+            text-align: right
 
 .process__item--description
     color: $process-subtitle-color
@@ -106,3 +142,23 @@
         width: 235px
         font-size: 16px
         font-weight: 400
+
+.process-container
+    background-size: cover
+    background-repeat: no-repeat
+    @media (min-width: 1025px)
+        background-position: top right
+        background-size: contain
+    @media (min-width: 1920px)
+        background-position: 1162px center
+
+.process-step
+    background-position: left center
+    background-size: 239px
+    background-repeat: no-repeat
+    @media (min-width: 1200px)
+        background-position: 35px center
+    @media (min-width: 1920px)
+        background-position: 312px center
+    @media (min-width: 2560px)
+        background-position: 632px center
