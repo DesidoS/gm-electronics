@@ -1,0 +1,124 @@
+.advantage__list
+    display: flex
+    flex-direction: column
+    @media (min-width: 1025px)
+        flex-direction: row
+        justify-content: space-between
+
+.advantage__item
+    transition: all 0.5s ease
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 13px 0
+    margin-top: 0
+    height: 101px
+
+    border-bottom: 1px dashed $white-color
+    cursor: pointer
+    flex-wrap: wrap
+    &.active
+        height: 210px
+
+    @media (min-width: 1025px)
+        padding: 0
+        border-bottom: none
+        flex-wrap: nowrap
+        flex-direction: column
+        align-items: flex-start
+        height: auto
+        width: 210px
+    @media (min-width: 1200px)
+        width: 255px
+
+    @media (max-width: 1024px)
+        &:hover .advantage__icon--hex,
+        &:hover .advantage__title,
+        &:focus .advantage__icon--hex,
+        &:focus .advantage__title
+            color: $stroke-color
+            stroke: $stroke-color
+
+.advantage__title
+    transition: all 0.5s ease
+    width: 132px
+
+    color: $white-color
+    font-size: 22px
+    font-weight: 700
+    line-height: 31px
+    letter-spacing: 0em
+    text-align: left
+
+    @media (min-width: 350px)
+        width: auto
+
+    @media (min-width: 1025px)
+        padding: 23px 0 13px 0
+
+.advantage__description
+    transition: all 0.5s ease
+
+    height: 1px
+    margin: -1px
+    padding: 0
+    border: 0
+
+    width: 100%
+
+    color: transparent
+
+    font-size: 16px
+    font-weight: 700
+    line-height: 22px
+    letter-spacing: 0em
+    text-align: justify
+
+    &.active
+        height: 100%
+        color: $product-discription-color
+
+    @media (min-width: 1025px)
+        height: 100%
+        color: $product-discription-color
+        font-weight: 400
+
+.advantage__item--container
+    width: 62px
+    height: 73px
+    @media (min-width: 1025px)
+        height: 104px
+        width: 89px
+
+.advantage__icon--hex
+    transition: all 0.5s ease
+    width: 62px
+    height: 73px
+    @media (min-width: 1025px)
+        height: 104px
+        width: 89px
+
+.advantage__icon
+    position: absolute
+    width: 38px
+    height: 44px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    @media (min-width: 1025px)
+        width: 47px
+        height: 54px
+
+.advantage__icon--arrow
+    width: 41px
+    height: 15px
+    rotate: 0deg
+    fill: $stroke-color
+    transition: all 0.5s ease
+
+    &.active
+        fill: $active-color
+        rotate: -90deg
+    @media (min-width: 1025px)
+        display: none

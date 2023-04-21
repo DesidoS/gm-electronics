@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=4.0"
     />
-    <title>GM Global</title>
+    <title>GM Electronics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -69,11 +69,27 @@
           ),
           url("./images/products-2.jpg");
       }
+      .active .products__item-wrap--2 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-2.jpg");
+      }
       .products__item-wrap--3 {
         background-image: linear-gradient(
             to right,
             rgba(6, 10, 17, 0.9),
             rgba(6, 10, 17, 0.9)
+          ),
+          url("./images/products-3.jpg");
+      }
+      .active .products__item-wrap--3 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
           ),
           url("./images/products-3.jpg");
       }
@@ -85,11 +101,27 @@
           ),
           url("./images/products-4.jpg");
       }
+      .active .products__item-wrap--4 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-4.jpg");
+      }
       .products__item-wrap--5 {
         background-image: linear-gradient(
             to right,
             rgba(6, 10, 17, 0.9),
             rgba(6, 10, 17, 0.9)
+          ),
+          url("./images/products-5.jpg");
+      }
+      .active .products__item-wrap--5 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
           ),
           url("./images/products-5.jpg");
       }
@@ -101,6 +133,14 @@
           ),
           url("./images/products-6.jpg");
       }
+      .active .products__item-wrap--6 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-6.jpg");
+      }
       .products__item-wrap--7 {
         background-image: linear-gradient(
             to right,
@@ -109,11 +149,27 @@
           ),
           url("./images/products-7.jpg");
       }
+      .active .products__item-wrap--7 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
+          ),
+          url("./images/products-7.jpg");
+      }
       .products__item-wrap--8 {
         background-image: linear-gradient(
             to right,
             rgba(6, 10, 17, 0.9),
             rgba(6, 10, 17, 0.9)
+          ),
+          url("./images/products-8.jpg");
+      }
+      .active .products__item-wrap--8 {
+        background-image: linear-gradient(
+            to right,
+            rgba(6, 10, 17, 0.97),
+            rgba(6, 10, 17, 0.97)
           ),
           url("./images/products-8.jpg");
       }
@@ -213,6 +269,34 @@
       @media (min-width: 1200px) {
         .philosophy-second-bg {
           background-image: url("images/philosophy-1200.png");
+        }
+      }
+      @media (min-width: 1025px) {
+        .philosophy-logo {
+          background-image: url("./images/philosophy-logo.png");
+        }
+      }
+      .reliability-container {
+        background-image: url("./images/reliability-bg.jpg");
+      }
+      @media (min-width: 1025px) {
+        .reliability-container {
+          background-image: url("images/reliability-bg-1024.jpg");
+        }
+      }
+      @media (min-width: 1200px) {
+        .reliability-container {
+          background-image: url("images/reliability-bg-1200.jpg");
+        }
+      }
+      @media (min-width: 1920px) {
+        .reliability-container {
+          background-image: url("images/reliability-bg-1920.jpg");
+        }
+      }
+      @media (min-width: 2560px) {
+        .reliability-container {
+          background-image: url("images/reliability-bg-2560.jpg");
         }
       }
     </style>
@@ -929,10 +1013,7 @@
       </div>
       <div class="philosophy-container">
         <div class="philosophy-second-bg">
-          <div
-            class="philisophy-logo"
-            style="background-image: url('./images/philosophy-logo.png')"
-          ></div>
+          <div class="philosophy-logo"></div>
         </div>
         <div class="container">
           <section class="philosophy">
@@ -958,6 +1039,148 @@
               </p>
             </div>
           </section>
+        </div>
+      </div>
+      <div id="reliability" class="reliability-container">
+        <div class="container">
+          <section class="reliability">
+            <div class="reliability__item--container">
+              <img
+                src="./images/reliability.jpg"
+                class="reliability__item"
+                alt="reliability"
+              />
+              <img
+                src="./images/reliability-1024.jpg"
+                class="reliability__item--1024"
+                alt="reliability"
+              />
+              <img
+                src="./images/reliability-1200.jpg"
+                class="reliability__item--1200"
+                alt="reliability"
+              />
+            </div>
+            <div class="reliability__content">
+              <h2 class="reliability__title">
+                Quality <span class="reliability__subtitle">meets Trust</span>
+                <svg class="dot reliability__dot" fill="#fff">
+                  <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                </svg>
+              </h2>
+              <p class="reliability__text">
+                Trust is another cornerstone of our business philosophy. We
+                believe in building long-term relationships with our clients
+                based on mutual trust and respect. Our commitment to
+                transparency, integrity and accountability has put us in a
+                position where we can proudly say that our customers are our
+                best salespeople.
+              </p>
+              <p class="reliability__text">
+                We understand that our success is tied to the success of our
+                clients, which is why we are constantly expanding our product
+                range to offer a broad spectrum of products. Whether you need
+                single items or assembled components, we have the expertise and
+                resources to deliver the right solutions for your needs.
+              </p>
+              <button class="button reliability__button">
+                <svg class="button-svg">
+                  <use href="./images/icon-sprite.svg#button-contact"></use>
+                  <text
+                    x="40%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    class="hero__contact-text"
+                  >
+                    Contact us
+                  </text>
+                </svg>
+              </button>
+            </div>
+          </section>
+          <secction class="advantage">
+            <ul class="advantage__list">
+              <li class="advantage__item advantage__item--1">
+                <div class="advantage__item--container">
+                  <svg class="advantage__icon--hex" stroke="#fff">
+                    <use href="./images/icon-sprite.svg#Hex"></use>
+                  </svg>
+                  <svg class="advantage__icon">
+                    <use href="./images/icon-sprite.svg#first-advantage"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage__title">First Advantage</h3>
+                <svg class="advantage__icon--arrow">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+                <p class="advantage__description">
+                  These components are designed for a specific application and
+                  operate as single units. They include transistors, diodes, and
+                  thyristors, among others.
+                </p>
+              </li>
+              <li class="advantage__item advantage__item--2">
+                <div class="advantage__item--container">
+                  <svg class="advantage__icon--hex" stroke="#fff">
+                    <use href="./images/icon-sprite.svg#Hex"></use>
+                  </svg>
+                  <svg class="advantage__icon">
+                    <use href="./images/icon-sprite.svg#second-advantage"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage__title">Second Advantage</h3>
+                <svg class="advantage__icon--arrow">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+                <p class="advantage__description">
+                  These high-frequency semiconductors are designed for use in
+                  radio frequency (RF) applications. They include amplifiers,
+                  oscillators, and transceivers, among others.
+                </p>
+              </li>
+              <li class="advantage__item advantage__item--3">
+                <div class="advantage__item--container">
+                  <svg class="advantage__icon--hex" stroke="#fff">
+                    <use href="./images/icon-sprite.svg#Hex"></use>
+                  </svg>
+                  <svg class="advantage__icon">
+                    <use href="./images/icon-sprite.svg#third-advantage"></use>
+                  </svg>
+                </div>
+                <h3 class="advantage__title">Third Advantage</h3>
+                <svg class="advantage__icon--arrow">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+                <p class="advantage__description">
+                  Our memory ICs are used to store and retrieve digital
+                  information. They include ROM, RAM, and flash memory, among
+                  others.
+                </p>
+              </li>
+              <li class="advantage__item advantage__item--4">
+                <div class="advantage__item--container">
+                  <svg class="advantage__icon--hex" stroke="#fff">
+                    <use href="./images/icon-sprite.svg#Hex"></use>
+                  </svg>
+                  <svg class="advantage__icon">
+                    <use
+                      href="./images/icon-sprite.svg#integrated-circuits"
+                    ></use>
+                  </svg>
+                </div>
+                <h3 class="advantage__title">Integrated circuits</h3>
+                <svg class="advantage__icon--arrow">
+                  <use href="./images/icon-sprite.svg#Arrow-products"></use>
+                </svg>
+                <p class="advantage__description">
+                  These components are designed for a specific application and
+                  operate as single units. They include transistors, diodes, and
+                  thyristors, among others.
+                </p>
+              </li>
+            </ul>
+          </secction>
         </div>
       </div>
     </main>
