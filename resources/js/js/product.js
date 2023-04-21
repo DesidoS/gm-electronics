@@ -1,29 +1,32 @@
 const items = document.querySelectorAll(".products__item");
+const wraps = document.querySelectorAll(".products__item-wrap");
 
 items.forEach((item) => {
   item.addEventListener("click", (event) => {
     items.forEach((el) => {
       if (el !== event.currentTarget) {
         if (el.style.zIndex > 1) {
-          el.style.zIndex = 1;
+          el.style.zIndex = 2;
+          setTimeout(() => {
+            el.style.zIndex = 1;
+          }, 1000);
         }
         el.classList.remove("active");
       }
     });
 
-    event.currentTarget.classList.toggle("active");
+    const currentItem = event.currentTarget;
+    currentItem.classList.toggle("active");
 
-    items.forEach((item) => {
-      Array.from(item.children).forEach((child) => {
-        Array.from(child.children).forEach((child) => {
-          child.classList?.remove("active");
-        });
+    wraps.forEach(({ children }) => {
+      [...children].forEach((child) => {
+        child.classList?.remove("active");
       });
     });
 
-    if (event.currentTarget.classList.contains("active")) {
+    if (currentItem.classList.contains("active")) {
       const [_, productsDescription, productsIcon] =
-        event.currentTarget.children[0].children;
+        event.currentTarget.firstElementChild.children;
       productsDescription.classList.add("active");
       productsIcon.classList.add("active");
     }
@@ -34,7 +37,7 @@ const body = document.querySelector("body"),
   observ = new MutationObserver(() => {
     const itemsActive = document.querySelector(".products__item.active");
     if (itemsActive) {
-      itemsActive.style.zIndex = 4;
+      itemsActive.style.zIndex = 3;
       itemsActive.addEventListener("click", (e) => {
         setTimeout(() => {
           itemsActive.style.zIndex = 1;
