@@ -4,7 +4,6 @@ const splideOptions = {
   type: "loop",
   pagination: false,
   arrows: false,
-  autoWidth: true,
   lazyLoad: "nearby",
   perPage: 1,
   speed: 500,
@@ -15,9 +14,6 @@ const splideOptions = {
   breakpoints: {
     1200: {
       destroy: true,
-    },
-    320: {
-      perPage: 1,
     },
   },
 };

@@ -1,5 +1,4 @@
 .products
-    overflow-x: hidden
     padding: 41px 0 55px 0
     @media (min-width: 1025px)
         padding: 64px 0 62px 0
@@ -39,6 +38,8 @@
     &.active .products__item-wrap
         top: 0
         height: 363px
+        @media (min-width: 1025px)
+            height: 240px
 
     &.active .products__item-wrap--7
         top: -123px
