@@ -29,8 +29,6 @@
         .hero-container {
           background-image: none;
         }
-      }
-      @media (min-width: 1025px) {
         .hero__halfhex {
           background-image: url("./images/half-hex.jpg");
         }
@@ -203,8 +201,16 @@
         background-image: url("images/statistic-bg.jpg");
       }
       @media (min-width: 1025px) {
+        .statistic-hex {
+          background-image: url("images/statistic-hex.png");
+        }
         .statistic-container {
           background-image: url("images/statistic-bg-1024.jpg");
+        }
+      }
+      @media (min-width: 1200px) {
+        .statistic-hex {
+          background-image: url("images/statistic-hex-1200.png");
         }
       }
       @media (min-width: 1920px) {
@@ -242,15 +248,13 @@
         .process-container {
           background-image: url("images/process-bg-1024.jpg");
         }
+        .process-step {
+          background-image: url("images/process-bg-text.png");
+        }
       }
       @media (min-width: 1920px) {
         .process-container {
           background-image: url("images/process-bg-1920.jpg");
-        }
-      }
-      @media (min-width: 1025px) {
-        .process-step {
-          background-image: url("images/process-bg-text.png");
         }
       }
       .philosophy {
@@ -260,8 +264,6 @@
         .philosophy {
           background-image: none;
         }
-      }
-      @media (min-width: 1025px) {
         .philosophy-second-bg {
           background-image: url("images/philosophy-1024.png");
         }
@@ -297,6 +299,14 @@
       @media (min-width: 2560px) {
         .reliability-container {
           background-image: url("images/reliability-bg-2560.jpg");
+        }
+      }
+      .advantage-hex {
+        background-image: url("images/advantage-hex.png");
+      }
+      @media (min-width: 1025px) {
+        .advantage-hex {
+          background-image: url("images/advantage-hex-1024.png");
         }
       }
     </style>
@@ -838,6 +848,7 @@
                   </svg>
                 </span>
               </h2>
+              <div class="statistic-hex"></div>
               <h2 class="statistic__title statistic__title-desktop">
                 Facts
                 <span class="statistic__subtitle"
@@ -1184,6 +1195,7 @@
             </ul>
           </secction>
         </div>
+        <div class="advantage-hex"></div>
       </div>
       <hr style="margin: 0; border: 2px white solid" />
     </main>

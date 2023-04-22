@@ -20,6 +20,10 @@
     flex-wrap: wrap
     &.active
         height: 210px
+        @media (min-width: 576px)
+            height: 155px
+        @media (min-width: 768px)
+            height: 140px
 
     @media (min-width: 1025px)
         padding: 0
@@ -122,3 +126,22 @@
         rotate: -90deg
     @media (min-width: 1025px)
         display: none
+
+.advantage-hex
+    position: absolute
+    pointer-events: none
+    background-repeat: no-repeat
+    background-size: contain
+    height: 467px
+    width: 464px
+    right: -280px
+    top: 840px
+
+    @media (min-width: 1025px)
+        right: -33px
+        top: 710px
+        height: 308px
+    @media (min-width: 1200px)
+        top: 594px
+    @media (min-width: 1920px)
+        right: 230px
