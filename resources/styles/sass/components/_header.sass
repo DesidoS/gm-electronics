@@ -16,6 +16,7 @@
       display: block
       background-color: inherit
       background-color: $general-second-text-color
+      opacity: 0.93
       height: 100vh
     &.beckdrop-scroll
       overflow-y: scroll
@@ -163,10 +164,10 @@
   margin: 0 auto
   transition: all 0.3s ease-in-out
 
-.header__contact-link--request:hover,
-.header__contact-link--request:focus
-  color: $accent-colors
-  border-bottom-color: $accent-colors
+  &:hover,
+  &:focus
+    color: $accent-colors
+    border-bottom-color: $accent-colors
 
 .header__contact-svg
   width: 14px
@@ -175,12 +176,9 @@
   &--mail
     width: 18px
     height: 13.5px
-    &--phone
-      width: 17px
-      height: 17px
-
-.header__contact-svg--phone
-  opacity: 0.5
+  &--phone
+    width: 17px
+    height: 17px
 
 .header__menu-btn
   @media (min-width: 1025px)
@@ -216,8 +214,6 @@
 .header__nav-item
   padding: 16px
   text-transform: uppercase
-  // margin-bottom: 32px
-  // margin: 0 auto 32px auto
 
   @media (min-width: 1025px)
     padding: 0

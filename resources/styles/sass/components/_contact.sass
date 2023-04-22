@@ -1,0 +1,72 @@
+.contact
+    padding: 45px 0 65px 0
+    @media (min-width: 1025px)
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        padding: 41px 0 41px 0
+
+.contact-container
+    background-size: cover
+    background-position: center
+
+    @media (min-width: 1025px)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+.contact__bg
+    display: none
+    @media (min-width: 1025px)
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 50%
+        height: 100%
+
+        background-color: $accent-colors
+        opacity: 0.8
+
+.contact__icon
+    display: none
+    @media (min-width: 1025px)
+        display: block
+        position: absolute
+        width: 92px
+
+        fill: $white-color
+
+.contact__title
+    color: $stroke-color
+
+    font-size: 25px
+    font-weight: 700
+    line-height: 30px
+    letter-spacing: 0em
+    text-align: center
+    @media (min-width: 1025px)
+        font-size: 45px
+        line-height: 53px
+        text-align: left
+        width: 80%
+
+.contact__subtitle
+    color: $white-color
+    @media (min-width: 1025px)
+
+//form--fake
+.contact__form--fake
+    margin-top: 17px
+
+    background-image: url(/images/fake-form.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    height: 431px
+    @media (min-width: 1025px)
+        margin-top: 0
+        background-image: url(/images/fake-form-1025.jpg)
+        background-position: right
+        width: 357px

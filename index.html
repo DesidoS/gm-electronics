@@ -309,6 +309,29 @@
           background-image: url("images/advantage-hex-1024.png");
         }
       }
+      .contact-container {
+        background-image: linear-gradient(
+            to left,
+            rgba(21, 21, 21, 0.8),
+            rgba(21, 21, 21, 0.8)
+          ),
+          url("images/contact-1366.jpg");
+      }
+      @media (min-width: 1025px) {
+        .contact-container {
+          background-image: url("images/contact-1366.jpg");
+        }
+      }
+      @media (min-width: 1920px) {
+        .contact-container {
+          background-image: url("images/contact-1920.jpg");
+        }
+      }
+      @media (min-width: 2560px) {
+        .contact-container {
+          background-image: url("images/contact-2560.jpg");
+        }
+      }
     </style>
   </head>
 
@@ -342,10 +365,10 @@
                 >
               </li>
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Who we are?</a>
+                <a href="#who-we-are" class="header__nav-link">Who we are?</a>
               </li>
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">contacts</a>
+                <a href="#contacts" class="header__nav-link">contacts</a>
               </li>
             </ul>
           </nav>
@@ -385,7 +408,7 @@
             </li>
             <li class="header__contact-item header__contact-item--request">
               <a
-                href="tel:+380961111111"
+                href="#"
                 class="header__contact-link header__contact-link--request"
               >
                 Request a call
@@ -491,7 +514,7 @@
                   </li>
                   <li class="hero__contact-item">
                     <a
-                      href="tel:+380961111111"
+                      href="#"
                       class="hero__contact-link hero__contact-link--request"
                     >
                       Request a call
@@ -1024,7 +1047,7 @@
           </div>
         </div>
       </div>
-      <div class="philosophy-container">
+      <div id="who-we-are" class="philosophy-container">
         <div class="philosophy-second-bg">
           <div class="philosophy-logo"></div>
         </div>
@@ -1198,9 +1221,119 @@
           </secction>
         </div>
       </div>
-      <hr class="advantage__hr" />
+      <div id="contacts" class="contact-container">
+        <section class="contact">
+          <div class="contact__bg"></div>
+          <svg class="contact__icon">
+            <use href="./images/icon-sprite.svg#Arrow-products"></use>
+          </svg>
+          <div>
+            <h2 class="contact__title">
+              REQUEST A QUOTE <br />
+              <span class="contact__subtitle"
+                >GET IN TOUCH WITH US
+                <svg class="dot contact__dot" fill=" #B2FFD9">
+                  <use href="./images/icon-sprite.svg#hexagon-green"></use>
+                </svg>
+              </span>
+            </h2>
+          </div>
+          <div class="contact__form--fake"></div>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <section class="footer">
+          <div class="footer__logo">
+            <a href="#" class="footer__logo-link">
+              <svg aria-label="Logo" class="footer__logo--svg">
+                <use href="./images/icon-sprite.svg#logo-footer"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">First screen</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#services-and-products" class="footer__nav-link"
+                  >Services and Products</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="#why-work-with-us" class="footer__nav-link"
+                  >Why work with us?</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="#who-we-are" class="footer__nav-link">Who we are?</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#contacts" class="footer__nav-link">contacts</a>
+              </li>
+            </ul>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <a
+                  href="https://goo.gl/maps/u99Wnz6Vcq7GsEhx6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__contact-link"
+                >
+                  <svg class="footer__contact-svg">
+                    <use href="./images/icon-sprite.svg#geo"></use>
+                  </svg>
+                  5C77+QV2 Parakar 0069
+                  <br />
+                  <span> Yerevan, Armenia </span>
+                </a>
+              </li>
+              <li class="footer__contact-item">
+                <a href="mailto:info@gmg.am" class="footer__contact-link">
+                  <svg class="footer__contact-svg footer__contact-svg--mail">
+                    <use href="./images/icon-sprite.svg#letter"></use>
+                  </svg>
+                  info@gmg.am
+                </a>
+              </li>
+              <li class="footer__contact-item">
+                <a href="tel:+374 98 88-88-05" class="footer__contact-link">
+                  <svg class="footer__contact-svg footer__contact-svg--phone">
+                    <use href="./images/icon-sprite.svg#phone"></use>
+                  </svg>
+                  +374 98 88-88-05</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <a
+                  href="#"
+                  class="footer__contact-link footer__contact-link--request"
+                >
+                  Request a call
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            <hr class="footer__copyright--hr" />
+            <ul class="footer__copyright--list">
+              <li class="footer__copyright--item">
+                <a class="footer__copyright--link" href="">Cookies Statement</a>
+              </li>
+              <li class="footer__copyright--item">
+                <a class="footer__copyright--link" href="">Privacy Policies</a>
+              </li>
+              <li class="footer__copyright--item">
+                <a class="footer__copyright--link" href="">Imprint</a>
+              </li>
+              <li class="footer__copyright--item">©2022-2023 von GM Global.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
     <script src="./public/js/home.js"></script>
   </body>
 </html>
