@@ -196,10 +196,14 @@
   fill: $second-color
   transform: translate(-50%, 0)
 
-.hero__halfhex
+.hero__hex
   background-repeat: no-repeat
   background-size: contain
   position: absolute
   right: 0
   width: 111px
   height: 551px
+  @media (min-width: 1920px)
+    height: 551px
+    width: 630px
+    right: -250px
