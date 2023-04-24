@@ -461,7 +461,7 @@
             <li class="header__contact-item header__contact-item--request">
               <a
                 href="#"
-                class="header__contact-link header__contact-link--request"
+                class="header__contact-link header__contact-link--request open-popup"
               >
                 Request a call
               </a>
@@ -570,7 +570,7 @@
                   <li class="hero__contact-item">
                     <a
                       href="#"
-                      class="hero__contact-link hero__contact-link--request"
+                      class="hero__contact-link hero__contact-link--request open-popup"
                     >
                       Request a call
                     </a>
@@ -1317,7 +1317,6 @@
                   </div>
                   <div class="input_error"></div>
                 </div>
-
                 <div
                   class="form-group"
                   data-validation="required|email|maxlength:32"
@@ -1334,15 +1333,18 @@
                   <div class="input_error"></div>
                 </div>
 
-                <div class="form-group" data-validation="required">
+                <div
+                  class="form-group form-group-phone"
+                  data-validation="required|phone_mask"
+                >
                   <div class="input-container">
                     <input
                       class="input input_number autofill-disable"
-                      name="input_number"
-                      type="text"
+                      name="phone"
+                      type="tel"
                       placeholder="Telephone number*"
                     />
-                    <label class="label" for="input_number"></label>
+                    <label class="label label-phone-mask" for="phone"></label>
                   </div>
                   <div class="input_error"></div>
                 </div>
@@ -1360,7 +1362,7 @@
                   <div class="input_error"></div>
                 </div>
 
-                <div class="form-group" >
+                <div class="form-group">
                   <div class="input-container">
                     <input
                       class="input input_regarding autofill-disable"
@@ -1404,6 +1406,134 @@
             </div>
           </section>
         </div>
+      </div>
+      <div class="popup__bg">
+        <svg aria-label="close" class="close-popup">
+          <use href="./images/icon-sprite.svg#popup-close"></use>
+        </svg>
+        <form class="popup">
+          <strong class="popup__title"
+            >Request <span class="popup__subtitle">a call</span>
+            <svg class="dot hero__subtitle-icon">
+              <use href="./images/icon-sprite.svg#hexagon-green"></use>
+            </svg>
+          </strong>
+          <div
+            class="form-group popup__input--name"
+            data-validation="required|maxlength:32"
+          >
+            <div class="input-container">
+              <input
+                class="input input_name autofill-disable"
+                name="input_name"
+                type="name"
+                placeholder="Name*"
+              />
+              <label class="label" for="input_text"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+          <div class="form-group" data-validation="required|email|maxlength:32">
+            <div class="input-container">
+              <input
+                class="input input_email autofill-disable"
+                name="email"
+                type="text"
+                placeholder="Email*"
+              />
+              <label class="label" for="email"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div
+            class="form-group form-group-phone"
+            data-validation="required|phone_mask"
+          >
+            <div class="input-container">
+              <input
+                class="input input_number autofill-disable"
+                name="phone"
+                type="tel"
+                placeholder="Telephone number*"
+              />
+              <label class="label label-phone-mask" for="phone"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <input
+                class="input input_adress autofill-disable"
+                name="input_adress"
+                type="text"
+                placeholder="Adress"
+              />
+              <label class="label" for="input_adress"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <input
+                class="input input_regarding autofill-disable"
+                name="input_regarding"
+                type="text"
+                placeholder="Regarding"
+              />
+              <label class="label" for="input_regarding"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <textarea
+                class="input input_textarea autofill-disable"
+                name="textarea"
+                autocomplete="off"
+                placeholder="Please enter your note"
+              ></textarea>
+              <label class="label" for="textarea"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+          <div
+            class="form-group type-checkbox check"
+            data-validation="required_checkbox"
+          >
+            <label class="check__label">
+              <input
+                class="check__input"
+                type="checkbox"
+                name="checkbox"
+                data-name="checkbox"
+              />
+              I agree to the use of my personal data
+              <span class="check__bg"></span>
+              <span class="check__icon"></span>
+              <span class="check__icon--checked"></span>
+            </label>
+            <div class="input_error"></div>
+          </div>
+
+          <button class="button form__contact-btn popup__btn" type="submit">
+            <svg class="button-svg form__contact-svg">
+              <use href="./images/icon-sprite.svg#button-contact"></use>
+              <text
+                class="hero__contact-text"
+                x="40%"
+                y="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+              >
+                Send
+              </text>
+            </svg>
+          </button>
+        </form>
       </div>
     </main>
     <footer>
@@ -1473,7 +1603,7 @@
               <li class="footer__contact-item">
                 <a
                   href="#"
-                  class="footer__contact-link footer__contact-link--request"
+                  class="footer__contact-link footer__contact-link--request open-popup"
                 >
                   Request a call
                 </a>
@@ -1501,88 +1631,3 @@
     <script src="./public/js/home.js"></script>
   </body>
 </html>
-
-<!-- <div class="form-group select" data-validation="">
-                  <div class="input-container">
-                    <div class="select-wrapper">
-                      <div
-                        class="select-value select-value-white"
-                        data-name="select_name"
-                        data-value="Select item 1"
-                      >
-                        <span>Select item 1</span>
-                        <div class="select-icon">
-                          <svg
-                            width="15"
-                            height="9"
-                            viewBox="0 0 15 9"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.17839 3.96357L7.5 4.23374L7.82161 3.96357L11.7628 0.652711L14.2216 2.71365L7.5 8.34759L0.778363 2.71365L3.23719 0.65271L7.17839 3.96357Z"
-                              fill="black"
-                              stroke="#F9F9F9"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="select-list" style="display: none">
-                        <div
-                          class="select-list-item active"
-                          data-value="Select item 1"
-                        >
-                          Select item 1
-                        </div>
-                        <div
-                          class="select-list-item"
-                          data-value="Select item 2"
-                        >
-                          Select item 2
-                        </div>
-                      </div>
-                    </div>
-                    <label class="label label_active" for="whoYouAre"
-                      >SELECT</label
-                    >
-                  </div>
-                  <div class="input_error"></div>
-                </div> -->
-
-<!-- </div>
-
-
-
-                <div
-                  class="form-group form-group-phone"
-                  data-validation="required|phone_mask"
-                >
-                  <div class="input-container">
-                    <input
-                      class="input autofill-disable"
-                      name="phone"
-                      type="tel"
-                      readonly="readonly"
-                      autocomplete="off"
-                    />
-                    <label class="label label-phone-mask" for="phone"
-                      >Phone</label
-                    >
-                  </div>
-                  <div class="input_error"></div>
-                </div>
-
-
-
-                <div
-                  class="form-group type-checkbox"
-                  data-validation="required_checkbox"
-                >
-                  <div class="checkbox-container">
-                    <div class="checkbox" data-name="checkbox">
-                      <div class="checkbox-mark"></div>
-                    </div>
-                    <span class="checkbox-text d-block">checkbox</span>
-                  </div>
-                  <div class="input_error"></div>
-                </div> -->
