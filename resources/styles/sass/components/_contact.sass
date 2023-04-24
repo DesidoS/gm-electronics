@@ -22,8 +22,8 @@
         display: block
         position: absolute
         top: 0
-        left: 0
-        width: 50%
+        left: -50%
+        width: 100%
         height: 100%
 
         background-color: $accent-colors
@@ -39,34 +39,92 @@
         fill: $white-color
 
 .contact__title
+
+    margin-bottom: 17px
     color: $stroke-color
 
-    font-size: 25px
+    font-size: 24px
     font-weight: 700
     line-height: 30px
     letter-spacing: 0em
-    text-align: center
+
     @media (min-width: 1025px)
+        margin-bottom: 0
         font-size: 45px
         line-height: 53px
-        text-align: left
         width: 80%
 
 .contact__subtitle
     color: $white-color
     @media (min-width: 1025px)
 
-//form--fake
-.contact__form--fake
-    margin-top: 17px
-
-    background-image: url(/images/fake-form.jpg)
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-    height: 431px
+.contact__form
+    background-color: $accent-colors
+    padding: 35px
+    border: 1px solid $white-color
+    border-radius: 25px
     @media (min-width: 1025px)
-        margin-top: 0
-        background-image: url(/images/fake-form-1025.jpg)
-        background-position: right
-        width: 357px
+        background-color: transparent
+        backdrop-filter: blur(12.5px)
+
+.input
+    padding: 5px 13px
+    margin-bottom: 17px
+
+    width: 100%
+
+    background: $white-color
+    border: 1px solid $form-border
+    border-radius: 2px
+
+    &::placeholder
+        color: $general-text-color
+
+        font-family: Open Sans
+        font-size: 14px
+        font-weight: 700
+        line-height: 23px
+        letter-spacing: 0em
+        text-align: left
+        @media (min-width: 1025px)
+            font-weight: 400
+
+.input_textarea
+    height: 66px
+    resize: none
+
+.form__contact-svg
+    fill: $btn-active-second-color
+    animation: form-change-color 5s infinite
+    transition: all 0.5s ease
+
+@keyframes form-change-color
+    0%
+        fill: $btn-active-second-color
+    25%
+        fill: $btn-active-second-color
+    50%
+        fill: $active-color
+    75%
+        fill: $btn-active-second-color
+    100%
+        fill: $btn-active-second-color
+
+.form__contact-svg:hover,
+.form__contact-svg:focus
+    animation-name: form-animation
+    animation-duration: 3s
+    animation-timing-function: linear
+    animation-iteration-count: infinite
+
+@keyframes form-animation
+    0%
+        fill: $btn-active-second-color
+    25%
+        fill: $btn-active-second-color
+    50%
+        fill: $accent-second-colors
+    75%
+        fill: $btn-active-second-color
+    100%
+        fill: $btn-active-second-color
