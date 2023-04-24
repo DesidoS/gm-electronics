@@ -5,7 +5,7 @@ const splideOptions = {
   pagination: false,
   arrows: false,
   lazyLoad: "nearby",
-  perPage: 1,
+  perPage: 3,
   speed: 500,
   gap: 30,
   drag: true,
