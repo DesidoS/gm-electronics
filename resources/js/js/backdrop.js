@@ -39,7 +39,7 @@ if (!window.matchMedia("(min-width: 1025px)").matches) {
   }
 
   function watchScreenHeight() {
-    if (window.innerHeight > 698) return;
+    if (window.innerHeight > 632) return;
     header.element.classList.add("beckdrop-scroll");
   }
 
