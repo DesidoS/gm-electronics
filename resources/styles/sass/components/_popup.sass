@@ -88,11 +88,13 @@
     position: absolute
     height: 10.2px
     width: 10.2px
-    left: 5.5px
-    top: 5.5px
-
     background-color: $accent-colors
     border-radius: 4px
+    left: 5px
+    top: 5px
+    @media (min-width: 1025px)
+        left: 5.5px
+        top: 5.5px
 
 .check__input:checked ~ .check__icon--checked
     display: block
