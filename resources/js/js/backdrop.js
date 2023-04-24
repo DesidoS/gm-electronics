@@ -19,10 +19,8 @@ if (!window.matchMedia("(min-width: 1025px)").matches) {
 
     if (document.body.style.overflowY === "hidden") {
       document.body.style.overflowY = "auto";
-      // document.body.style.overflowX = "hidden";
     } else {
       document.body.style.overflowY = "hidden";
-      // document.body.style.overflowX = "hidden";
     }
 
     header.langBtn.classList.toggle("is-open");
