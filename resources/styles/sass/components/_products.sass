@@ -219,11 +219,24 @@
     @media (min-width: 1025px)
         width: 436px
 
+    @media (min-width: 1200px)
+        width: 529px
     &.active
         height: auto
         margin-bottom: auto
-
         color: $product-discription-color
+
+.products__item--3 .products__description,
+.products__item--6 .products__description
+    @media (min-width: 1025px)
+        left: -240px
+    @media (min-width: 1200px)
+        left: -290px
+
+.products__item--3 .products__description.active,
+.products__item--6 .products__description.active
+    @media (min-width: 1025px)
+        left: 0
 
 .products__icon
     width: 41px

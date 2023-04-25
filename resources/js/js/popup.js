@@ -7,8 +7,14 @@ const headerRef = document.querySelector(".header");
 openPopupButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
+
+    if (window.innerHeight > 632) {
+      popup.classList.add("scroll");
+    }
+
     popupBg.classList.add("active");
     popup.classList.add("active");
+    if (headerRef.classList.contains("is-open")) return;
     document.body.style.overflow = "hidden";
   });
 });
