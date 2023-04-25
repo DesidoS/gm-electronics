@@ -9,7 +9,7 @@ items.forEach((item) => {
           el.style.zIndex = 2;
           setTimeout(() => {
             el.style.zIndex = 1;
-          }, 1000);
+          }, 500);
         }
         el.classList.remove("active");
       }
@@ -41,7 +41,7 @@ const body = document.querySelector("body"),
       itemsActive.addEventListener("click", (e) => {
         setTimeout(() => {
           itemsActive.style.zIndex = 1;
-        }, 1000);
+        }, 500);
       });
     }
   });

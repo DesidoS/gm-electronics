@@ -12,7 +12,7 @@
         height: 711px
 
 .products__item .products__item-wrap
-    transition: all 1s ease
+    transition: all 0.5s ease
 
     position: absolute
     width: 100%
@@ -22,7 +22,7 @@
     background-position: center
 
 .products__item
-    transition: all 1s ease
+    transition: all 0.5s ease
 
     display: flex
     flex-direction: column
@@ -42,6 +42,8 @@
     &.active .products__item-wrap
         top: 0
         height: 363px
+        @media (min-width: 477px)
+            height: 243px
 
     &.active .products__item-wrap--7
         top: -123px
@@ -67,7 +69,7 @@
     &.active .products__item-wrap--3,
     &.active .products__item-wrap--6
         @media (min-width: 1025px)
-            left: -238px
+            left: -241px
             width: 476px
             height: 349px
         @media (min-width: 1200px)
@@ -81,11 +83,16 @@
             bottom: 0
 
     &.active .products__item-wrap--7
+        @media (min-width: 477px)
+            top: 0
+            height: 240px
         @media (min-width: 1025px)
             top: 0
             height: 350px
 
     &.active .products__item-wrap--8
+        @media (min-width: 477px)
+            height: 240px
         @media (min-width: 1025px)
             top: -178px
             height: 350px
@@ -198,6 +205,8 @@
     padding: 0
     border: 0
 
+    user-select: none
+
     width: 100%
     color: transparent
     font-size: 16px
@@ -207,9 +216,10 @@
     text-align: justify
 
     transition: all 0.5s ease
+    @media (min-width: 1025px)
+        width: 436px
 
     &.active
-        width: 100%
         height: auto
         margin-bottom: auto
 
@@ -220,7 +230,7 @@
     height: 15px
     rotate: 0deg
     fill: $stroke-color
-    transition: rotate 0.5s ease, fill 0.5s ease, bottom 0.5s ease
+    transition: all 0.5s ease
     position: absolute
     bottom: 20px
     left: 20px
