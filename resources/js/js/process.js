@@ -14,18 +14,22 @@ window.addEventListener("scroll", () => {
           delay = 200;
           break;
         case 1:
-          delay = 200 * index + (index === 1 ? 600 : 0);
+          delay = 400;
           break;
         case 2:
+          delay = 1400;
+          break;
         case 3:
-          delay = 1000 + 200 * (index - 2) + 400;
+          delay = 1600;
           break;
         case 4:
+          delay = 2800;
+          break;
         case 5:
-          delay = 2000 + 200 * (index - 4) + 400;
+          delay = 3000;
           break;
         case 6:
-          delay = 5500;
+          delay = 4000;
           break;
         default:
           delay = 0;
