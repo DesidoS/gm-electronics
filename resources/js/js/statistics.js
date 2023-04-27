@@ -6,14 +6,16 @@ function animateNumbers() {
     let startValue = 0;
     const animationDuration = 1000;
     const step = (endValue / animationDuration) * 10;
-
+    let delay = window.innerWidth < 1025 ? 1500 : 1000;
     const timer = setInterval(() => {
       item.textContent = Math.floor(startValue);
-      startValue += step;
-      if (startValue >= endValue) {
-        clearInterval(timer);
-        item.textContent = endValue;
-      }
+      setTimeout(() => {
+        startValue += step;
+        if (startValue >= endValue) {
+          clearInterval(timer);
+          item.textContent = endValue;
+        }
+      }, delay);
     }, 10);
   });
 }

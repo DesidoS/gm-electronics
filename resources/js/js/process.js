@@ -11,25 +11,25 @@ window.addEventListener("scroll", () => {
       let delay;
       switch (index) {
         case 0:
-          delay = 200;
+          delay = 0;
           break;
         case 1:
-          delay = 400;
+          delay = window.innerHeight > 1025 ? 0 : 600;
           break;
         case 2:
-          delay = 1400;
+          delay = window.innerHeight > 1025 ? 1400 : 1200;
           break;
         case 3:
-          delay = 1600;
+          delay = window.innerHeight > 1025 ? 1600 : 1800;
           break;
         case 4:
-          delay = 2800;
+          delay = window.innerHeight > 1025 ? 2800 : 2400;
           break;
         case 5:
           delay = 3000;
           break;
         case 6:
-          delay = 4000;
+          delay = window.innerHeight > 1025 ? 4000 : 4000;
           break;
         default:
           delay = 0;

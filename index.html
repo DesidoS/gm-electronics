@@ -385,8 +385,12 @@
   <body>
     <div class="preloader">
       <div class="mobile-loader-logo"></div>
-      <img src="./images/сover.jpg" class="mobile-loader" />
-      <img src="./images/сover-1025.jpg" class="desktop-loader" />
+      <img src="./images/сover.jpg" alt="сover" class="mobile-loader" />
+      <img
+        src="./images/сover-1025.jpg"
+        alt="сover1025"
+        class="desktop-loader"
+      />
     </div>
     <header class="header">
       <div class="header__content container">
@@ -451,7 +455,7 @@
               </a>
             </li>
             <li class="header__contact-item">
-              <a href="tel:+374 98 88-88-05" class="header__contact-link">
+              <a href="tel:+37498888805" class="header__contact-link">
                 <svg class="header__contact-svg header__contact-svg--phone">
                   <use href="./images/icon-sprite.svg#phone"></use>
                 </svg>
@@ -471,7 +475,7 @@
         <div class="header__button-container">
           <div class="header__lang">
             <button class="header__lang-button">
-              EN&nbsp&nbspAR
+              EN&nbsp;&nbsp;AR
               <div class="header__lang-container">
                 <div class="header__lang-svg header__lang-svg--en">
                   <svg class="header__lang-svg--img">
@@ -554,7 +558,7 @@
                 </li>
                 <div class="hero__contact-container">
                   <li class="hero__contact-item">
-                    <a href="tel:+374 98 88-88-05" class="hero__contact-link">
+                    <a href="tel:+37498888805" class="hero__contact-link">
                       <svg class="hero__contact-svg hero__contact-svg--phone">
                         <use href="./images/icon-sprite.svg#phone"></use>
                       </svg>
@@ -629,7 +633,7 @@
             </div>
             <div class="services__content">
               <h2 class="services__title">
-                Services &amp; <span class="services__subtitle">Products</span>
+                Services & <span class="services__subtitle">Products</span>
                 <svg class="dot services__dot" fill="#fff">
                   <use href="./images/icon-sprite.svg#hexagon-green"></use>
                 </svg>
@@ -1303,11 +1307,12 @@
                   <div class="input-container">
                     <input
                       class="input input_name autofill-disable"
-                      name="input_name"
-                      type="name"
+                      name="name"
+                      type="text"
                       placeholder="Name*"
+                      id="name"
                     />
-                    <label class="label" for="input_text"></label>
+                    <label class="label" for="name"></label>
                   </div>
                   <div class="input_error"></div>
                 </div>
@@ -1321,6 +1326,7 @@
                       name="email"
                       type="text"
                       placeholder="Email*"
+                      id="email"
                     />
                     <label class="label" for="email"></label>
                   </div>
@@ -1337,6 +1343,7 @@
                       name="phone"
                       type="tel"
                       placeholder="Telephone number*"
+                      id="phone"
                     />
                     <label class="label label-phone-mask" for="phone"></label>
                   </div>
@@ -1350,6 +1357,7 @@
                       name="input_adress"
                       type="text"
                       placeholder="Adress"
+                      id="input_adress"
                     />
                     <label class="label" for="input_adress"></label>
                   </div>
@@ -1363,6 +1371,7 @@
                       name="input_regarding"
                       type="text"
                       placeholder="Regarding"
+                      id="input_regarding"
                     />
                     <label class="label" for="input_regarding"></label>
                   </div>
@@ -1376,6 +1385,7 @@
                       name="textarea"
                       autocomplete="off"
                       placeholder="Please enter your note"
+                      id="textarea"
                     ></textarea>
                     <label class="label" for="textarea"></label>
                   </div>
@@ -1419,11 +1429,12 @@
             <div class="input-container">
               <input
                 class="input input_name autofill-disable"
-                name="input_name"
-                type="name"
+                name="name"
+                type="text"
                 placeholder="Name*"
+                id="request_name"
               />
-              <label class="label" for="input_text"></label>
+              <label class="label" for="request_name"></label>
             </div>
             <div class="input_error"></div>
           </div>
@@ -1434,8 +1445,9 @@
                 name="email"
                 type="text"
                 placeholder="Email*"
+                id="request_email"
               />
-              <label class="label" for="email"></label>
+              <label class="label" for="request_email"></label>
             </div>
             <div class="input_error"></div>
           </div>
@@ -1450,8 +1462,9 @@
                 name="phone"
                 type="tel"
                 placeholder="Telephone number*"
+                id="request_phone"
               />
-              <label class="label label-phone-mask" for="phone"></label>
+              <label class="label label-phone-mask" for="request_phone"></label>
             </div>
             <div class="input_error"></div>
           </div>
@@ -1463,8 +1476,9 @@
                 name="input_adress"
                 type="text"
                 placeholder="Adress"
+                id="request_input_adress"
               />
-              <label class="label" for="input_adress"></label>
+              <label class="label" for="request_input_adress"></label>
             </div>
             <div class="input_error"></div>
           </div>
@@ -1476,8 +1490,9 @@
                 name="input_regarding"
                 type="text"
                 placeholder="Regarding"
+                id="request_input_regarding"
               />
-              <label class="label" for="input_regarding"></label>
+              <label class="label" for="request_input_regarding"></label>
             </div>
             <div class="input_error"></div>
           </div>
@@ -1489,8 +1504,9 @@
                 name="textarea"
                 autocomplete="off"
                 placeholder="Please enter your note"
+                id="request_textarea"
               ></textarea>
-              <label class="label" for="textarea"></label>
+              <label class="label" for="request_textarea"></label>
             </div>
             <div class="input_error"></div>
           </div>
@@ -1587,7 +1603,7 @@
                 </a>
               </li>
               <li class="footer__contact-item">
-                <a href="tel:+374 98 88-88-05" class="footer__contact-link">
+                <a href="tel:+37498888805" class="footer__contact-link">
                   <svg class="footer__contact-svg footer__contact-svg--phone">
                     <use href="./images/icon-sprite.svg#phone"></use>
                   </svg>
