@@ -167,19 +167,22 @@
 .process__item--dot,
 .process__item--title,
 .process__item--description
-    opacity: 0
+    @media (min-width: 1025px)
+        opacity: 0
 
 .process__item.show .process__item--dot,
 .process__item.show .process__item--title,
 .process__item.show .process__item--description
-    animation: process 1.5s ease-out forwards
-    @keyframes process
-        0%
-            opacity: 0
-        80%
-            opacity: 0
-        100%
-            opacity: 1
+    @media (min-width: 1025px)
+
+        animation: process 1.5s ease-out forwards
+        @keyframes process
+            0%
+                opacity: 0
+            80%
+                opacity: 0
+            100%
+                opacity: 1
 
 .process__item--title
     color: $process-subtitle-color
