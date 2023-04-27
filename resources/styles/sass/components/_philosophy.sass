@@ -3,12 +3,10 @@
         position: absolute
         background-size: contain
         background-repeat: no-repeat
-        height: 574px
         width: 539px
-        top: -298px
+        height: 265px
         left: -95px
     @media (min-width: 1200px)
-        top: -350px
         left: 0
         height: 644px
         width: 605px
@@ -21,16 +19,20 @@
 
 .philosophy-logo
     position: absolute
-    background-size: contain
+    z-index: 1
+    width: 77px
+    height: 92px
+    left: 50%
+    transform: translateX(-50%)
+    top: 20px
+
+    background-position: center
     background-repeat: no-repeat
-    height: 166.76px
-    width: 140px
+    background-size: contain
     @media (min-width: 1025px)
-        bottom: 60px
-        left: 200px
-    @media (min-width: 1200px)
-        bottom: 84px
-        left: 232px
+        top: 41px
+        height: 166.76px
+        width: 140px
 
 .philosophy-container
     background-color: $philosophy

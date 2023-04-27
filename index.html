@@ -49,13 +49,14 @@
 
       @media screen and (max-width: 1024px) {
         .mobile-loader-logo {
-          background-image: url("./images/cover-gm.png");
+          background-image: url("./images/preloader-min.gif");
           background-size: contain;
+          background-repeat: no-repeat;
           position: absolute;
           z-index: 1;
 
-          width: 180px;
-          height: 189px;
+          width: 156px;
+          height: 190px;
         }
         .mobile-loader {
           display: block;
@@ -305,25 +306,18 @@
         }
       }
       .philosophy {
-        background-image: url("./images/philosophy.png");
+        background-image: url("./images/philosophy_video_560px.gif");
       }
       @media (min-width: 1025px) {
         .philosophy {
           background-image: none;
         }
         .philosophy-second-bg {
-          background-image: url("./images/philosophy-1024.png");
+          background-image: url("./images/philosophy_video-1025.gif");
         }
       }
-      @media (min-width: 1200px) {
-        .philosophy-second-bg {
-          background-image: url("./images/philosophy-1200.png");
-        }
-      }
-      @media (min-width: 1025px) {
-        .philosophy-logo {
-          background-image: url("./images/philosophy-logo.png");
-        }
+      .philosophy-logo {
+        background-image: url("./images/philosophy-logo.png");
       }
       .reliability-container {
         background-image: url("./images/reliability-bg.jpg");
@@ -579,11 +573,15 @@
                 </div>
               </ul>
             </div>
+            <video class="hero__image" autoplay loop>
+              <source src="./images/first_screen_video_.mp4" type="video/mp4" />
+            </video>
             <div
-              class="hero__image"
-              style="background-image: url('./images/Hero-img.jpg')"
+              class="hero__image-bg"
+              style="
+                background-image: url('./images/bg_for_first_screen_video.png');
+              "
             ></div>
-
             <div class="hero__arrow-container">
               <a href="#services-and-products" class="hero__arrow-btn">
                 <svg class="hero__arrow-btn--hex">
@@ -1146,18 +1144,13 @@
           <section class="reliability">
             <div class="reliability__item--container">
               <img
-                src="./images/reliability.jpg"
+                src="./images/reliability.gif"
                 class="reliability__item"
                 alt="reliability"
               />
               <img
-                src="./images/reliability-1024.jpg"
+                src="./images/reliability-1025.gif"
                 class="reliability__item--1024"
-                alt="reliability"
-              />
-              <img
-                src="./images/reliability-1200.jpg"
-                class="reliability__item--1200"
                 alt="reliability"
               />
             </div>

@@ -8,7 +8,7 @@ openPopupButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if (window.innerHeight > 632) {
+    if (window.innerHeight < 632) {
       popup.classList.add("scroll");
     }
 
