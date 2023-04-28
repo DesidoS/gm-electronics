@@ -7,3 +7,4 @@ import "./js/popup.js";
 import "./js/header.js";
 import "./js/statistics.js";
 import "./js/process.js";
+import "./js/cookies.js";

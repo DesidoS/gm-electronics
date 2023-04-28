@@ -1,0 +1,130 @@
+.cookies,
+.cookies__popup__bg
+    display: none
+@media (min-width: 1025px)
+
+    .cookies
+        display: block
+        background-color: $cookies-background
+        height: 96px
+        position: fixed
+        bottom: 0
+        width: 100%
+        opacity: 0.97
+        z-index: 999
+
+    .cookies-container
+        display: flex
+        padding-top: 15px
+        padding-bottom: 18px
+        justify-content: space-between
+        align-items: center
+
+    .cookies__text
+
+        flex-basis: 50%
+        color: $white-color
+        font-size: 16px
+        font-weight: 400
+        line-height: 22px
+        letter-spacing: 0em
+        text-align: left
+
+    .cookies__link
+        color: $second-color
+        transition: all 0.3s
+
+        border-bottom: 1.5px dashed $second-color
+
+        font-size: 14px
+        font-weight: 700
+        line-height: 19px
+        letter-spacing: 0em
+
+        &:hover,
+        &:focus
+            color: $switch-text-color
+            border-bottom-color: $switch-text-color
+
+    .cookies__popup__bg
+        display: block
+        z-index: 999
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,0.5)
+        opacity: 0
+        pointer-events: none
+        transition: 0.5s all
+
+        &.active
+            opacity: 1
+            pointer-events: all
+            transition: 0.5s all
+
+    .cookies__popup
+        position: absolute
+        top: 0
+        right: 0
+        transform: translateX(100%)
+        background: #fff
+        width: 100%
+        height: 100%
+        transition: 0.5s all
+        padding: 25px
+
+        &.active
+            transform: translateX(0%)
+            transition: 0.5s all
+            &.active.scroll
+                overflow-y: scroll
+                padding-bottom: 40px
+                padding-top: 40px
+
+    .cookies__close-popup
+        position: absolute
+        z-index: 999
+        top: 5px
+        right: 5px
+        width: 22px
+        height: 22px
+        cursor: pointer
+        @media (min-width: 1025px)
+            top: 22px
+            right: 39px
+
+    .underline
+        height: 3px
+        width: 127px
+        background-color: $accent-colors
+
+    .cookies__popup--title
+        font-size: 35px
+        font-weight: 700
+        line-height: 48px
+        letter-spacing: 0em
+        text-align: left
+
+    .cookies__popup--title--text
+        padding-top: 21px
+        padding-bottom: 0
+        font-size: 20px
+        font-weight: 400
+        line-height: 28px
+        letter-spacing: 0em
+        text-align: justify
+
+    .cookies__popup--subtitle
+        color: $second-color
+
+    .cookies__popup--text
+        font-size: 16px
+        font-weight: 400
+        line-height: 22px
+        letter-spacing: 0em
+        text-align: justify
+
+    .cookies__popup--text-container
+        color: $product-discription-color
