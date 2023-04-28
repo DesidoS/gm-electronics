@@ -15,9 +15,13 @@ const cookiesClosePopupButton = document.querySelector(".cookies__close-popup");
 cookiesOpenPopupButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
+
     document.body.style.overflow = "hidden";
 
     if (window.innerHeight < 632) {
+      cookiesPopup.classList.add("scroll");
+    }
+    if (window.innerWidth < 904) {
       cookiesPopup.classList.add("scroll");
     }
 
