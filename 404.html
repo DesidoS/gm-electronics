@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=4.0"
+    />
+    <title>GM Electronics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/home.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icon/favicon-16x16.png"
+    />
+    <style>
+      main {
+        padding: 0;
+      }
+      @media (max-width: 1024px) {
+        .header {
+          display: none;
+        }
+        .hero__404--logo {
+          position: absolute;
+          height: 74.99961853027344px;
+          width: 213.579833984375px;
+          left: 16px;
+          top: 38px;
+        }
+      }
+
+      .hero__404 {
+        background-image: url("./images/hero-bg-mobile.jpg");
+        display: flex;
+        align-items: normal;
+        justify-content: center;
+      }
+      @media (min-width: 1025px) {
+        .hero__404 {
+          align-items: center;
+          justify-content: normal;
+        }
+      }
+      .hero__404--title {
+        margin-top: 158px;
+        color: #6c7073;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+      }
+      @media (min-width: 1025px) {
+        .hero__404--title {
+          margin-top: 0;
+          margin-left: 8%;
+        }
+      }
+
+      .hero__404--subtitle {
+        color: #000;
+        font-size: 150px;
+        font-weight: 800;
+        line-height: 100px;
+        letter-spacing: 0em;
+      }
+      @media (min-width: 1025px) {
+        .hero__404--subtitle {
+          font-size: 267px;
+          font-weight: 800;
+          line-height: 180px;
+          letter-spacing: 0em;
+        }
+      }
+      .hero__404--subtitle-second {
+        margin-left: 130px;
+      }
+      @media (min-width: 1025px) {
+        .hero__404--subtitle-second {
+          margin-left: 330px;
+        }
+      }
+      @media (min-width: 1025px) {
+        .hero__404 {
+          background-image: url("./images/404-bg.jpg");
+          height: 680px;
+          background-position: center;
+        }
+        .hero__404--logo {
+          display: none;
+        }
+      }
+      .hero__404--animation {
+        position: absolute;
+        bottom: 0;
+        height: 294px;
+        width: 527px;
+      }
+      @media (min-width: 1025px) {
+        .hero__404--animation {
+          position: absolute;
+          height: 500px;
+          width: 895px;
+          bottom: 0;
+          left: 50%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link">
+            <svg aria-label="Logo" class="header__logo-svg">
+              <use href="./images/icon-sprite.svg#logo-header"></use>
+            </svg>
+            <svg aria-label="Logo" class="header__logo-svg--footer is-open">
+              <use href="./images/icon-sprite.svg#logo-footer"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">First screen</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#services-and-products" class="header__nav-link"
+                  >Services and Products</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="#why-work-with-us" class="header__nav-link"
+                  >Why work with us?</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="#who-we-are" class="header__nav-link">Who we are?</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#contacts" class="header__nav-link">contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__contact">
+          <ul class="header__contact-list">
+            <li class="header__contact-item header__contact-item--geo">
+              <a
+                href="https://goo.gl/maps/u99Wnz6Vcq7GsEhx6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="header__contact-link"
+              >
+                <svg class="header__contact-svg">
+                  <use href="./images/icon-sprite.svg#geo"></use>
+                </svg>
+                5C77+QV2 Parakar 0069
+                <br />
+                <span> Yerevan, Armenia </span>
+              </a>
+            </li>
+            <li class="header__contact-item header__contact-item--mail">
+              <a href="mailto:info@gmg.am" class="header__contact-link">
+                <svg class="header__contact-svg header__contact-svg--mail">
+                  <use href="./images/icon-sprite.svg#letter"></use>
+                </svg>
+                info@gmg.am
+              </a>
+            </li>
+            <li class="header__contact-item">
+              <a href="tel:+37498888805" class="header__contact-link">
+                <svg class="header__contact-svg header__contact-svg--phone">
+                  <use href="./images/icon-sprite.svg#phone"></use>
+                </svg>
+                +374 98 88-88-05</a
+              >
+            </li>
+            <li class="header__contact-item header__contact-item--request">
+              <a
+                href="#"
+                class="header__contact-link header__contact-link--request open-popup"
+              >
+                Request a call
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__button-container">
+          <div class="header__lang">
+            <button class="header__lang-button">
+              EN&nbsp;&nbsp;AR
+              <div class="header__lang-container">
+                <div class="header__lang-svg header__lang-svg--en">
+                  <svg class="header__lang-svg--img">
+                    <use href="./images/icon-sprite.svg#en"></use>
+                  </svg>
+                </div>
+                <div class="header__lang-svg header__lang-svg--ar arActive">
+                  <svg class="header__lang-svg--img">
+                    <use href="./images/icon-sprite.svg#ar"></use>
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero-container hero__404">
+        <svg aria-label="Logo" class="header__logo-svg hero__404--logo">
+          <use href="./images/icon-sprite.svg#logo-header"></use>
+        </svg>
+        <h1 class="hero__404--title">
+          Oops... Error <br /><span class="hero__404--subtitle">404</span>
+          <br />
+          <span class="hero__404--subtitle-second"> Page not found </span>
+        </h1>
+        <img
+          class="hero__404--animation"
+          src="./images/404_element_animation_animated.svg"
+          alt="404"
+        />
+      </div>
+      <div class="popup__bg">
+        <svg aria-label="close" class="close-popup">
+          <use href="./images/icon-sprite.svg#popup-close"></use>
+        </svg>
+        <form class="popup">
+          <strong class="popup__title"
+            >Request <span class="popup__subtitle">a call</span>
+            <svg class="dot hero__subtitle-icon">
+              <use href="./images/icon-sprite.svg#hexagon-green"></use>
+            </svg>
+          </strong>
+          <div
+            class="form-group popup__input--name"
+            data-validation="required|maxlength:32"
+          >
+            <div class="input-container">
+              <input
+                class="input input_name autofill-disable"
+                name="name"
+                type="text"
+                placeholder="Name*"
+                id="request_name"
+              />
+              <label class="label" for="request_name"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+          <div class="form-group" data-validation="required|email|maxlength:32">
+            <div class="input-container">
+              <input
+                class="input input_email autofill-disable"
+                name="email"
+                type="text"
+                placeholder="Email*"
+                id="request_email"
+              />
+              <label class="label" for="request_email"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div
+            class="form-group form-group-phone"
+            data-validation="required|phone_mask"
+          >
+            <div class="input-container">
+              <input
+                class="input input_number autofill-disable"
+                name="phone"
+                type="tel"
+                placeholder="Telephone number*"
+                id="request_phone"
+              />
+              <label class="label label-phone-mask" for="request_phone"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <input
+                class="input input_adress autofill-disable"
+                name="input_adress"
+                type="text"
+                placeholder="Adress"
+                id="request_input_adress"
+              />
+              <label class="label" for="request_input_adress"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <input
+                class="input input_regarding autofill-disable"
+                name="input_regarding"
+                type="text"
+                placeholder="Regarding"
+                id="request_input_regarding"
+              />
+              <label class="label" for="request_input_regarding"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <textarea
+                class="input input_textarea autofill-disable"
+                name="textarea"
+                autocomplete="off"
+                placeholder="Please enter your note"
+                id="request_textarea"
+              ></textarea>
+              <label class="label" for="request_textarea"></label>
+            </div>
+            <div class="input_error"></div>
+          </div>
+          <div
+            class="form-group type-checkbox check"
+            data-validation="required_checkbox"
+          >
+            <label class="check__label">
+              <input
+                class="check__input"
+                type="checkbox"
+                name="checkbox"
+                data-name="checkbox"
+              />
+              I agree to the use of my personal data
+              <span class="check__bg"></span>
+              <span class="check__icon"></span>
+              <span class="check__icon--checked"></span>
+            </label>
+            <div class="input_error"></div>
+          </div>
+
+          <button class="button form__contact-btn popup__btn" type="submit">
+            <svg class="button-svg form__contact-svg">
+              <use href="./images/icon-sprite.svg#button-contact"></use>
+              <text
+                class="hero__contact-text"
+                x="40%"
+                y="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+              >
+                Send
+              </text>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <section class="footer">
+          <div class="footer__logo">
+            <a href="#" class="footer__logo-link">
+              <svg aria-label="Logo" class="footer__logo--svg">
+                <use href="./images/icon-sprite.svg#logo-footer"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">First screen</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#services-and-products" class="footer__nav-link"
+                  >Services and Products</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="#why-work-with-us" class="footer__nav-link"
+                  >Why work with us?</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a href="#who-we-are" class="footer__nav-link">Who we are?</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#contacts" class="footer__nav-link">contacts</a>
+              </li>
+            </ul>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <a
+                  href="https://goo.gl/maps/u99Wnz6Vcq7GsEhx6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__contact-link"
+                >
+                  <svg class="footer__contact-svg">
+                    <use href="./images/icon-sprite.svg#geo"></use>
+                  </svg>
+                  5C77+QV2 Parakar 0069
+                  <br />
+                  Yerevan, Armenia
+                </a>
+              </li>
+              <li class="footer__contact-item">
+                <a href="mailto:info@gmg.am" class="footer__contact-link">
+                  <svg class="footer__contact-svg footer__contact-svg--mail">
+                    <use href="./images/icon-sprite.svg#letter"></use>
+                  </svg>
+                  info@gmg.am
+                </a>
+              </li>
+              <li class="footer__contact-item">
+                <a href="tel:+37498888805" class="footer__contact-link">
+                  <svg class="footer__contact-svg footer__contact-svg--phone">
+                    <use href="./images/icon-sprite.svg#phone"></use>
+                  </svg>
+                  +374 98 88-88-05</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <a
+                  href="#"
+                  class="footer__contact-link footer__contact-link--request open-popup"
+                >
+                  Request a call
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__copyright">
+          <hr class="footer__copyright--hr" />
+          <ul class="footer__copyright--list">
+            <li class="footer__copyright--item">
+              <a class="footer__copyright--link" href="">Cookies Statement</a>
+            </li>
+            <li class="footer__copyright--item">
+              <a class="footer__copyright--link" href="">Privacy Policies</a>
+            </li>
+            <li class="footer__copyright--item">
+              <a class="footer__copyright--link" href="">Imprint</a>
+            </li>
+            <li class="footer__copyright--item">©2022-2023 von GM Global.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./resources/js/js/lang.js"></script>
+    <script src="./resources/js/js/popup.js"></script>
+  </body>
+</html>
