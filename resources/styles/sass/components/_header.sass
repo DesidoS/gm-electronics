@@ -23,6 +23,7 @@
       background-color: $general-second-text-color
       opacity: 0.93
       height: 100vh
+
     &.beckdrop-scroll
       overflow-y: scroll
   @media (min-width: 1025px)
@@ -196,17 +197,15 @@
   background-color: $white-color
   background-color: transparent
   cursor: pointer
+  overflow: hidden
+  height: 26px
 
 .header__menu-close
   width: 26px
   height: 26px
-  transition: transform 0.1s
+  transition: transform 0.4s
   &.is-open
     transform: rotate(45deg)
-
-.btn-container
-  overflow: hidden
-  height: 26px
 
 .header__nav-list
   display: flex

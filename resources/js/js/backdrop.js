@@ -16,7 +16,6 @@ if (!window.matchMedia("(min-width: 1025px)").matches) {
     window.addEventListener("resize", watchScreenHeight);
 
     watchScreenHeight();
-
     if (document.body.style.overflowY === "hidden") {
       document.body.style.overflowY = "auto";
     } else {

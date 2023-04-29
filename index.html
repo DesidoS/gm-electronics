@@ -27,8 +27,8 @@
         setTimeout(function () {
           document.body.style.overflow = "";
           document.querySelector(".preloader").style.display = "none";
-          // }, 0);
-        }, 2000);
+        }, 0);
+        // }, 4000);
       });
     </script>
     <style>
@@ -352,6 +352,11 @@
           background-image: url("./images/advantage-hex-1024.png");
         }
       }
+      @media (min-width: 1920px) {
+        .advantage-hex {
+          background-image: url("./images/advantage-hex-1920.png");
+        }
+      }
       .contact-container {
         background-image: linear-gradient(
             to left,
@@ -492,11 +497,9 @@
               aria-expanded="false"
               class="header__menu-button"
             >
-              <div class="btn-container">
-                <svg aria-label="menu-switch" class="header__menu-close">
-                  <use href="./images/icon-sprite.svg#menu"></use>
-                </svg>
-              </div>
+              <svg aria-label="menu-switch" class="header__menu-close">
+                <use href="./images/icon-sprite.svg#menu"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -508,11 +511,11 @@
         <div class="container">
           <section class="hero">
             <div class="hero__content">
-              <div class="hero__logo" href="#">
+              <a class="hero__logo" href="#">
                 <svg class="hero__logo-svg" aria-label="Logo">
                   <use href="./images/icon-sprite.svg#logo-header"></use>
                 </svg>
-              </div>
+              </a>
               <h1 class="hero__title">
                 Production and Supply Solutions
                 <span class="hero__subtitle">for Electronic Components</span>
@@ -552,27 +555,25 @@
                     info@gmg.am
                   </a>
                 </li>
-                <div class="hero__contact-container">
-                  <li class="hero__contact-item">
-                    <a href="tel:+37498888805" class="hero__contact-link">
-                      <svg class="hero__contact-svg hero__contact-svg--phone">
-                        <use href="./images/icon-sprite.svg#phone"></use>
-                      </svg>
-                      <span class="hero__contact-item--addition"
-                        >Telefon:&nbsp;</span
-                      >
-                      +374 98 88-88-05</a
+                <li class="hero__contact-item">
+                  <a href="tel:+37498888805" class="hero__contact-link">
+                    <svg class="hero__contact-svg hero__contact-svg--phone">
+                      <use href="./images/icon-sprite.svg#phone"></use>
+                    </svg>
+                    <span class="hero__contact-item--addition"
+                      >Telefon:&nbsp;</span
                     >
-                  </li>
-                  <li class="hero__contact-item">
-                    <a
-                      href="#"
-                      class="hero__contact-link hero__contact-link--request open-popup"
-                    >
-                      Request a call
-                    </a>
-                  </li>
-                </div>
+                    +374 98 88-88-05</a
+                  >
+                </li>
+                <li class="hero__contact-item">
+                  <a
+                    href="#"
+                    class="hero__contact-link hero__contact-link--request open-popup"
+                  >
+                    Request a call
+                  </a>
+                </li>
               </ul>
             </div>
             <video class="hero__image" autoplay loop>
@@ -647,8 +648,9 @@
                 accessible through traditional delivery channels.
               </p>
               <p class="services__text">
-                GM Global is offering a wide range of electronic components,
-                each designed to deliver optimal performance and reliability.
+                GM Electronics is offering a wide range of electronic
+                components, each designed to deliver optimal performance and
+                reliability.
               </p>
               <a class="button services__button" href="#contacts">
                 <svg class="button-svg">
@@ -854,10 +856,10 @@
         </div>
       </div>
       <div id="why-work-with-us" class="benefits-container">
-        <div class="benefits-background"></div>
         <div class="benefits-second-background"></div>
 
         <div class="container">
+          <div class="benefits-background"></div>
           <section class="benefits">
             <div class="benefits__content">
               <h2 class="benefits__title">
@@ -917,6 +919,7 @@
         <div class="statistic-background"></div>
         <div class="container">
           <section class="statistic">
+            <div class="statistic-hex"></div>
             <div class="statistic__content">
               <h2 class="statistic__title statistic__title-mobile">
                 We are in
@@ -927,7 +930,6 @@
                   </svg>
                 </span>
               </h2>
-              <div class="statistic-hex"></div>
               <h2 class="statistic__title statistic__title-desktop">
                 Facts
                 <span class="statistic__subtitle"
@@ -938,8 +940,9 @@
                 </span>
               </h2>
               <p class="statistic__text">
-                GM Global is offering a wide range of electronic components,
-                each designed to deliver optimal performance and reliability.
+                GM Electronics is offering a wide range of electronic
+                components, each designed to deliver optimal performance and
+                reliability.
               </p>
             </div>
             <div class="statistic__list">
@@ -1087,7 +1090,7 @@
                     <div>
                       <h3 class="process__item--title">Step 6.</h3>
                       <p class="process__item--description">
-                        Continuation of cooperation (go step 1)
+                        Continuation of cooperation
                       </p>
                     </div>
                   </li>
@@ -1124,10 +1127,10 @@
                 </svg>
               </h2>
               <p class="philosophy__text">
-                At GM Global, we are guided by a business philosophy that is
-                centered around quality, trust, and growth. We understand that
-                our clients expect nothing but the best from us, which is why we
-                prioritize quality in everything we do.
+                At GM Electronics, we are guided by a business philosophy that
+                is centered around quality, trust, and growth. We understand
+                that our clients expect nothing but the best from us, which is
+                why we prioritize quality in everything we do.
               </p>
               <p class="philosophy__text">
                 We strive to provide our clients with the highest quality
@@ -1141,9 +1144,8 @@
       </div>
       <div id="reliability" class="reliability-container">
         <div class="advantage-hex"></div>
-
-        <div class="container">
-          <section class="reliability">
+        <section>
+          <div class="container reliability">
             <div class="reliability__item--container">
               <img
                 src="./images/reliability.gif"
@@ -1193,8 +1195,10 @@
                 </svg>
               </a>
             </div>
-          </section>
-          <secction class="advantage">
+          </div>
+        </section>
+        <div class="advantage">
+          <div class="container">
             <ul class="advantage__list">
               <li class="advantage__item advantage__item--1">
                 <div class="advantage__item--container">
@@ -1275,13 +1279,13 @@
                 </p>
               </li>
             </ul>
-          </secction>
+          </div>
         </div>
       </div>
       <div id="contacts" class="contact-container">
+        <div class="contact__bg"></div>
         <div class="container">
           <section class="contact">
-            <div class="contact__bg"></div>
             <svg class="contact__icon">
               <use href="./images/icon-sprite.svg#Arrow-products"></use>
             </svg>
@@ -1297,7 +1301,7 @@
               </h2>
             </div>
             <div class="contact__form-container">
-              <form action="" id="form" class="contact__form">
+              <form id="form" class="contact__form">
                 <div class="form-group" data-validation="required|maxlength:32">
                   <div class="input-container">
                     <input
@@ -1419,8 +1423,8 @@
             <svg class="dot hero__subtitle-icon">
               <use href="./images/icon-sprite.svg#hexagon-green"></use>
             </svg>
-            <div class="underline"></div>
           </strong>
+          <div class="underline"></div>
           <div
             class="form-group popup__input--name"
             data-validation="required|name|maxlength:32"
@@ -1585,23 +1589,23 @@
               <svg class="dot hero__subtitle-icon">
                 <use href="./images/icon-sprite.svg#hexagon-green"></use>
               </svg>
-              <div class="underline"></div>
             </h2>
+            <div class="underline"></div>
             <h2 class="cookies__popup--title">
               Cookies Statement
               <svg class="dot hero__subtitle-icon">
                 <use href="./images/icon-sprite.svg#hexagon-green"></use>
               </svg>
-              <div class="underline"></div>
             </h2>
+            <div class="underline"></div>
             <h2 class="cookies__popup--title">
               Privacy
               <span class="cookies__popup--subtitle"> Policies </span>
               <svg class="dot hero__subtitle-icon">
                 <use href="./images/icon-sprite.svg#hexagon-green"></use>
               </svg>
-              <div class="underline"></div>
             </h2>
+            <div class="underline"></div>
             <div class="cookies__popup--text-container">
               <h3 class="cookies__popup--title--text">Overview</h3>
               <p class="cookies__popup--text">
@@ -1750,7 +1754,9 @@
                 >Imprint</a
               >
             </li>
-            <li class="footer__copyright--item">©2022-2023 von GM Global.</li>
+            <li class="footer__copyright--item">
+              ©2022-2023 von GM Electronics.
+            </li>
           </ul>
         </div>
       </div>
