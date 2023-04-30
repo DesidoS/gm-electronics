@@ -25,6 +25,11 @@
       main {
         padding: 0;
       }
+      @media (min-width: 1025px) {
+        main {
+          padding-top: 92px;
+        }
+      }
       @media (max-width: 1024px) {
         .header {
           display: none;
@@ -120,7 +125,7 @@
     <header class="header">
       <div class="header__content container">
         <div class="header__logo">
-          <a href="#" class="header__logo-link">
+          <a href="/index.html" class="header__logo-link">
             <svg aria-label="Logo" class="header__logo-svg">
               <use href="./images/icon-sprite.svg#logo-header"></use>
             </svg>
@@ -201,18 +206,25 @@
           <div class="header__lang">
             <button class="header__lang-button">
               EN&nbsp;&nbsp;AR
-              <div class="header__lang-container">
-                <div class="header__lang-svg header__lang-svg--en">
-                  <svg class="header__lang-svg--img">
-                    <use href="./images/icon-sprite.svg#en"></use>
-                  </svg>
-                </div>
-                <div class="header__lang-svg header__lang-svg--ar arActive">
-                  <svg class="header__lang-svg--img">
-                    <use href="./images/icon-sprite.svg#ar"></use>
-                  </svg>
-                </div>
-              </div>
+              <svg class="header__lang-svg--img header__lang-svg--img--en">
+                <use href="./images/icon-sprite.svg#en"></use>
+              </svg>
+              <svg
+                class="header__lang-svg--img header__lang-svg--img--ar arActive"
+              >
+                <use href="./images/icon-sprite.svg#ar"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header__menu-btn">
+            <button
+              type="button"
+              aria-expanded="false"
+              class="header__menu-button"
+            >
+              <svg aria-label="menu-switch" class="header__menu-close">
+                <use href="./images/icon-sprite.svg#menu"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -373,7 +385,7 @@
       <div class="container">
         <section class="footer">
           <div class="footer__logo">
-            <a href="#" class="footer__logo-link">
+            <a href="/index.html" class="footer__logo-link">
               <svg aria-label="Logo" class="footer__logo--svg">
                 <use href="./images/icon-sprite.svg#logo-footer"></use>
               </svg>
