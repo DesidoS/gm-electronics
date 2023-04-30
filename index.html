@@ -307,20 +307,6 @@
           background-image: url("./images/process-bg-1920.jpg");
         }
       }
-      .philosophy {
-        background-image: url("./images/philosophy_video_560px.gif");
-      }
-      @media (min-width: 1025px) {
-        .philosophy {
-          background-image: none;
-        }
-        .philosophy-second-bg {
-          background-image: url("./images/philosophy_video-1025.gif");
-        }
-      }
-      .philosophy-logo {
-        background-image: url("./images/philosophy-logo.png");
-      }
       .reliability-container {
         background-image: url("./images/reliability-bg.jpg");
       }
@@ -1121,11 +1107,25 @@
         </div>
       </div>
       <div id="who-we-are" class="philosophy-container">
-        <div class="philosophy-second-bg">
-          <div class="philosophy-logo"></div>
-        </div>
         <div class="container">
           <section class="philosophy">
+            <div class="philosophy__img-container">
+              <img
+                class="philosophy-bg"
+                src="/images/philosophy_video_560px.gif"
+                alt="philosophy"
+              />
+              <img
+                class="philosophy-bg-1025"
+                src="/images/philosophy_video-1025.gif"
+                alt="philosophy"
+              />
+              <img
+                class="philosophy-logo"
+                src="/images/philosophy-logo.png"
+                alt="philosophy"
+              />
+            </div>
             <div class="philosophy__content">
               <h2 class="philosophy__title">
                 Our
