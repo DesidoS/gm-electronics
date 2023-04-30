@@ -5,14 +5,12 @@ if (!window.matchMedia("(min-width: 1025px)").matches) {
 
   window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
-
-    if (currentScroll > lastScroll) {
+    if (currentScroll > 83 && currentScroll > lastScroll) {
       header.classList.remove("fixed");
       header.classList.add("hide");
     } else {
       header.classList.add("fixed");
     }
-
     lastScroll = currentScroll;
   });
 }
