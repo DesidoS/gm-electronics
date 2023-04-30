@@ -1,6 +1,4 @@
 if (!window.matchMedia("(min-width: 1025px)").matches) {
-  console.log("window.matchMedia:", window.matchMedia);
-
   const items = document.querySelectorAll(".advantage__item");
 
   items.forEach((item) => {
