@@ -24,12 +24,6 @@ items.forEach((item) => {
       });
     });
 
-    if (currentItem.classList.contains("active")) {
-      const [_, productsDescription, productsIcon] =
-        event.currentTarget.firstElementChild.children;
-      productsDescription.classList.add("active");
-      productsIcon.classList.add("active");
-    }
   });
 });
 
