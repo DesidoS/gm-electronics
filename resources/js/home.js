@@ -1,3 +1,4 @@
+import "./js/preloader.js";
 import "./js/backdrop.js";
 import "./js/lang.js";
 import "./js/product.js";
@@ -6,5 +7,5 @@ import "./js/advantage.js";
 import "./js/popup.js";
 import "./js/header.js";
 import "./js/statistics.js";
-import "./js/process.js";
 import "./js/cookies.js";
+import "./js/process.js";

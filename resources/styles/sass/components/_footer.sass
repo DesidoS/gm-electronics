@@ -9,7 +9,13 @@ footer
     @media (min-width: 1025px)
         align-items: normal
         flex-direction: row
-        justify-content: space-between
+
+.footer__logo
+    @media (min-width: 1025px)
+        margin-right: 23px
+
+    @media (min-width: 1200px)
+        margin-right: 120px
 
 .footer__logo--svg
     height: 61px
@@ -51,6 +57,7 @@ footer
 .footer__contact-list
     margin-top: 20px
     @media (min-width: 1025px)
+        margin-left: 11.5px
         display: flex
         flex-direction: row
         justify-content: space-between
@@ -113,9 +120,13 @@ footer
     &--mail
         width: 18px
         height: 13.5px
+    @media (min-width: 1025px)
+        margin-top: 2.5px
+
     &--phone
         width: 17px
         height: 17px
+        opacity: 0.4
     @media (min-width: 1025px)
         margin-right: 17px
 
@@ -156,3 +167,7 @@ footer
 
     &:hover, &:focus
         color: $hover-second-color
+
+.footer__copyright--item
+    &:nth-child(3) .footer__copyright--link
+        padding-right: 0

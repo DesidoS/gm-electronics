@@ -21,52 +21,7 @@
       sizes="16x16"
       href="./icon/favicon-16x16.png"
     />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.body.style.overflow = "hidden";
-        setTimeout(function () {
-          document.body.style.overflow = "";
-          document.querySelector(".preloader").style.display = "none";
-        // }, 0);
-        }, 4000);
-      });
-    </script>
     <style>
-      .preloader {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-        z-index: 9999;
-      }
-
-      .mobile-loader {
-        display: none;
-      }
-
-      @media screen and (max-width: 1024px) {
-        .mobile-loader-logo {
-          background-image: url("./images/preloader-min.gif");
-          background-size: contain;
-          background-repeat: no-repeat;
-          position: absolute;
-          z-index: 1;
-
-          width: 156px;
-          height: 190px;
-        }
-        .mobile-loader {
-          display: block;
-        }
-        .desktop-loader {
-          display: none;
-        }
-      }
       .hero-container {
         background-image: url("./images/hero-bg-mobile.jpg");
       }
@@ -371,7 +326,11 @@
 
   <body>
     <div class="preloader">
-      <div class="mobile-loader-logo"></div>
+      <img
+        src="./images/preloader-min.gif"
+        alt="сover"
+        class="mobile-loader-logo"
+      />
       <img src="./images/сover.jpg" alt="сover" class="mobile-loader" />
       <img
         src="./images/сover-1025.jpg"
@@ -1116,16 +1075,15 @@
         <div class="container">
           <section class="philosophy">
             <div class="philosophy__img-container">
-              <img
-                class="philosophy-bg"
-                src="./images/philosophy_video_560px.gif"
-                alt="Our business philosophy"
-              />
-              <img
-                class="philosophy-bg-1025"
-                src="./images/philosophy_video-1025.gif"
-                alt="Our business philosophy"
-              />
+              <video
+                class="philosophy-video"
+                src="./images/philosophy_video_560px.mp4"
+                type="video/mp4"
+                autoplay
+                playsinline
+                muted
+                loop
+              ></video>
               <img
                 class="philosophy-logo"
                 src="./images/philosophy-logo.png"

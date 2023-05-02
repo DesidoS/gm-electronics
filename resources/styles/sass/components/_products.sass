@@ -72,8 +72,12 @@
     background-position: center
     border: $second-color 1.5px solid
     @media (min-width: 1025px)
+        background-size: 100%
         padding: 45px 20px 23px 20px
         min-height: 177px
+        &:hover,
+        &:focus
+            background-size: 115%
 
 .products__item-wrap--2,
 .products__item-wrap--3,
@@ -83,6 +87,7 @@
         min-height: 355px
 
 .products__item
+    cursor: pointer
     height: 123px
     @media (min-width: 1025px)
         height: 177px
