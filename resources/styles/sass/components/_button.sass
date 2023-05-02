@@ -3,7 +3,7 @@
   padding: 0
   width: 210px
   height: 37px
-  
+
   cursor: pointer
   background-size: cover
   background-color: transparent
@@ -15,8 +15,8 @@
   text-align: center
   color: $white-color
   fill: $accent-colors
-  animation: change-color 5s infinite
-  transition: all 0.5s ease
+  animation: change-color 5s ease-in infinite
+  transition: all 0.5s ease-in
 
 @keyframes change-color
   0%
@@ -36,10 +36,7 @@
 
 .button:hover,
 .button:focus
-  animation-name: button-animation
-  animation-duration: 3s
-  animation-timing-function: linear
-  animation-iteration-count: infinite
+  animation: button-animation 3s ease-in infinite
 
 @keyframes button-animation
   0%

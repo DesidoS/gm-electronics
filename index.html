@@ -23,15 +23,15 @@
     />
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", () => {
         let delay = window.innerWidth > 1025 ? 500 : 5500;
         document.body.style.overflow = "hidden";
-        setTimeout(function () {
+        setTimeout(() => {
           document.querySelector(".preloader").style.transform =
             "translateY(-500%)";
           document.body.style.overflow = "";
         }, delay);
-        setTimeout(function () {
+        setTimeout(() => {
           document.querySelector(".preloader").style.display = "none";
         }, delay + 500);
       });

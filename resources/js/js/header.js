@@ -1,6 +1,5 @@
 if (!window.matchMedia("(min-width: 1025px)").matches) {
   const header = document.querySelector("header");
-  const html = document.querySelector("html");
   let lastScroll = 0;
 
   window.addEventListener("scroll", () => {

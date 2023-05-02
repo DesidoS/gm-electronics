@@ -2,7 +2,10 @@ const cookiesBtn = document.querySelector(".cookies__button");
 const cookiesRef = document.querySelector(".cookies");
 
 cookiesBtn.addEventListener("click", () => {
-  cookiesRef.style.display = "none";
+  cookiesRef.style.transform = "translateY(100%)";
+  setTimeout(() => {
+    cookiesRef.style.display = "none";
+  }, 1000);
 });
 
 const cookiesPopupBg = document.querySelector(".cookies__popup__bg");

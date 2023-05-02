@@ -2,7 +2,6 @@ const popupBg = document.querySelector(".popup__bg");
 const popup = document.querySelector(".popup");
 const openPopupButtons = document.querySelectorAll(".open-popup");
 const closePopupButton = document.querySelector(".close-popup");
-const headerRef = document.querySelector(".header");
 
 openPopupButtons.forEach((button) => {
   button.addEventListener("click", (e) => {

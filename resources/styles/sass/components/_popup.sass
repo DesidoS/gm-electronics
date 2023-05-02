@@ -8,12 +8,11 @@
     background: rgba(0,0,0,0.5)
     opacity: 0
     pointer-events: none
-    transition: 0.5s all
+    transition: 0.4s all ease-in-out
 
     &.active
         opacity: 1
         pointer-events: all
-        transition: 0.5s all
 
 .popup
     position: absolute
@@ -24,12 +23,11 @@
     width: 340px
     height: 100%
     padding: 25px
-    transition: 0.5s all
+    transition: 0.4s all ease-in-out
     padding: 6% 36px 0 40px
 
     &.active
         transform: translateX(0%)
-        transition: 0.5s all
     &.active.scroll
         overflow-y: scroll
         padding-bottom: 40px

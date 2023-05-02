@@ -1,5 +1,4 @@
 const items = document.querySelectorAll(".products__item");
-const wraps = document.querySelectorAll(".products__item-wrap");
 
 items.forEach((item) => {
   item.addEventListener("click", (event) => {
@@ -17,13 +16,6 @@ items.forEach((item) => {
 
     const currentItem = event.currentTarget;
     currentItem.classList.toggle("active");
-
-    wraps.forEach(({ children }) => {
-      [...children].forEach((child) => {
-        child.classList?.remove("active");
-      });
-    });
-
   });
 });
 
