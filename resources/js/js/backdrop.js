@@ -19,13 +19,13 @@ function openBackdrop() {
 
   if (!header.element.classList.contains("is-open")) {
     window.removeEventListener("resize", watchScreenHeight);
-    header.element.classList.remove("beckdrop-scroll");
+    header.element.classList.remove("backdrop-scroll");
   }
 }
 
 function watchScreenHeight() {
   if (window.innerHeight > 632) return;
-  header.element.classList.add("beckdrop-scroll");
+  header.element.classList.add("backdrop-scroll");
 }
 
 header.menuBtn.addEventListener("click", openBackdrop);

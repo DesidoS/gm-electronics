@@ -21,7 +21,7 @@
       opacity: 0.93
       height: 100vh
 
-    &.beckdrop-scroll
+    &.backdrop-scroll
       overflow-y: scroll
   @media (min-width: 1025px)
     padding-top: 20px
@@ -162,9 +162,12 @@
 .header__contact-item--addition
   display: none
 
+.header.backdrop-scroll .header__contact-item--request
+  padding-bottom: 50px
 .header__contact-link--request
   width: max-content
-  margin-top: 5px
+  margin: 0 auto
+
   color: $active-color
   border-color: $active-color
   border-bottom: 1.5px dashed $active-color
@@ -173,7 +176,6 @@
   line-height: 19px
   letter-spacing: 0em
   text-align: left
-  margin: 0 auto
   transition: all 0.3s ease-in-out
 
   &:hover,
