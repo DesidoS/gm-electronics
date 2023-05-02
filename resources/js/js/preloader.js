@@ -1,7 +1,7 @@
 const preloader = document.querySelector(".preloader");
 
 document.addEventListener("DOMContentLoaded", function () {
-  let delay = window.innerWidth > 1025 ? 500 : 500;
+  let delay = window.innerWidth > 1025 ? 500 : 5500;
   document.body.style.overflow = "hidden";
   setTimeout(function () {
     preloader.style.transform = "translateY(-500%)";
