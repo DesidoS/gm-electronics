@@ -21,7 +21,6 @@
       sizes="16x16"
       href="./icon/favicon-16x16.png"
     />
-
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         let delay = window.innerWidth > 1025 ? 500 : 5500;
@@ -50,22 +49,50 @@
         background-color: #ffffff;
         z-index: 9999;
       }
-
-      .mobile-loader,
+      .mobile-loader {
+        background-image: url("./images/preloader-320.jpg");
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+      }
       .mobile-loader-logo {
+        position: absolute;
+        z-index: 2;
+        width: 250px;
+        height: 250px;
+        background-image: url("./images/preloader-320-logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .mobile-loader-video {
+        position: absolute;
+        height: 234px;
+        z-index: 1;
+      }
+      @media (min-width: 560px) {
+        .mobile-loader {
+          background-image: url("./images/preloader-560.jpg");
+        }
+        .mobile-loader-logo {
+          background-image: url("./images/preloader-560-logo.png");
+        }
+      }
+      .desktop-loader {
         display: none;
       }
-      @media (max-width: 1024px) {
-        .mobile-loader-logo {
-          position: absolute;
-          z-index: 1;
-          height: 255px;
-        }
-        .mobile-loader,
-        .mobile-loader-logo {
+      @media (min-width: 1025px) {
+        .desktop-loader {
           display: block;
         }
-        .desktop-loader {
+        .mobile-loader,
+        .mobile-loader-logo,
+        .mobile-loader-video {
           display: none;
         }
       }
@@ -373,12 +400,18 @@
 
   <body>
     <div class="preloader">
-      <img
-        src="./images/preloader-min.gif"
-        alt="сover"
-        class="mobile-loader-logo"
-      />
-      <img src="./images/сover.jpg" alt="сover" class="mobile-loader" />
+      <div class="mobile-loader">
+        <div class="mobile-loader-logo"></div>
+      </div>
+      <video
+        class="mobile-loader-video"
+        src="./images/first_screen_video_.mp4"
+        type="video/mp4"
+        autoplay
+        playsinline
+        muted
+        loop
+      ></video>
       <img
         src="./images/сover-1025.jpg"
         alt="сover1025"
