@@ -5,18 +5,17 @@ const header = {
 };
 
 function openBackdrop() {
-  if (!header.element.classList.contains("is-open")) return;
   window.addEventListener("resize", watchScreenHeight);
 
   watchScreenHeight();
+
+  header.element.classList.toggle("is-open");
 
   if (document.body.style.overflowY === "hidden") {
     document.body.style.overflowY = "auto";
   } else {
     document.body.style.overflowY = "hidden";
   }
-
-  header.element.classList.toggle("is-open");
 
   if (!header.element.classList.contains("is-open")) {
     window.removeEventListener("resize", watchScreenHeight);
@@ -30,4 +29,9 @@ function watchScreenHeight() {
 }
 
 header.menuBtn.addEventListener("click", openBackdrop);
-header.navItem.forEach((el) => el.addEventListener("click", openBackdrop));
+header.navItem.forEach((el) =>
+  el.addEventListener("click", () => {
+    if (!header.element.classList.contains("is-open")) return;
+    openBackdrop();
+  })
+);
