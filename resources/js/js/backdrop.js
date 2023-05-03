@@ -5,6 +5,7 @@ const header = {
 };
 
 function openBackdrop() {
+  if (!header.element.classList.contains("is-open")) return;
   window.addEventListener("resize", watchScreenHeight);
 
   watchScreenHeight();

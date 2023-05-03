@@ -1,7 +1,18 @@
 const cookiesBtn = document.querySelector(".cookies__button");
 const cookiesRef = document.querySelector(".cookies");
 
+const cookieValue = document.cookie.replace(
+  /(?:(?:^|.*;\s*)cookieConsent\s*\=\s*([^;]*).*$)|^.*$/,
+  "$1"
+);
+if (cookieValue) {
+  cookiesRef.style.display = "none";
+}
+
 cookiesBtn.addEventListener("click", () => {
+  document.cookie =
+    "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+
   cookiesRef.style.transform = "translateY(100%)";
   setTimeout(() => {
     cookiesRef.style.display = "none";
@@ -10,12 +21,10 @@ cookiesBtn.addEventListener("click", () => {
 
 const cookiesPopupBg = document.querySelector(".cookies__popup__bg");
 const cookiesPopup = document.querySelector(".cookies__popup");
-const cookiesOpenPopupButtons = document.querySelectorAll(
-  ".cookies__open-popup"
-);
-const cookiesClosePopupButton = document.querySelector(".cookies__close-popup");
+const cookiesOpenPopupBtn = document.querySelectorAll(".cookies__open-popup");
+const cookiesClosePopupBtn = document.querySelector(".cookies__close-popup");
 
-cookiesOpenPopupButtons.forEach((button) => {
+cookiesOpenPopupBtn.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -33,7 +42,7 @@ cookiesOpenPopupButtons.forEach((button) => {
   });
 });
 
-cookiesClosePopupButton.addEventListener("click", () => {
+cookiesClosePopupBtn.addEventListener("click", () => {
   document.body.style.overflow = "";
   cookiesPopupBg.classList.remove("active");
   cookiesPopup.classList.remove("active");
