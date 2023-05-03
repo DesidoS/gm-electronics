@@ -36,7 +36,6 @@
 .products__item-wrap.products__item-wrap--4
     @media (min-width: 1025px)
         bottom: 0px
-        position: absolute
 .products__item--5
     grid-area: 5 / 1 / 6 / 2
     @media (min-width: 1025px)
@@ -56,14 +55,13 @@
         grid-area: 4 / 3 / 5 / 5
 
 .products__item-wrap.products__item-wrap--8
-    position: absolute
-    bottom: 3px
-    @media (min-width: 1025px)
-        bottom: 0px
+    bottom: 0px
 
 .products__item-wrap
     position: absolute
-    max-height: 120px
+    min-height: 123px
+    width: 100%
+    overflow: hidden
 
     transition: all 0.5s ease-in-out
 
@@ -71,13 +69,38 @@
     background-size: cover
     background-position: center
     border: $second-color 1.5px solid
+    &.active
+        z-index: 1
+        @media (min-width: 1025px)
+            height: 280px
+
     @media (min-width: 1025px)
         background-size: 100%
         padding: 45px 20px 23px 20px
-        min-height: 177px
+        height: 177px
+        width: 482px
+
         &:hover,
         &:focus
             background-size: 115%
+
+    @media (min-width: 1200px)
+        width: 570px
+
+.products__item-wrap--1.active,
+.products__item-wrap--4.active,
+.products__item-wrap--7.active,
+.products__item-wrap--8.active
+    @media (min-width: 1025px)
+        height: 270px
+
+.products__item
+    cursor: pointer
+    @media (max-width: 1024px)
+        height: 123px
+        width: 100%
+    @media (min-width: 1025px)
+        height: 177px
 
 .products__item-wrap--2,
 .products__item-wrap--3,
@@ -85,41 +108,21 @@
 .products__item-wrap--6
     @media (min-width: 1025px)
         min-height: 355px
+        width: 241px
+        &.active
+            width: 482px
 
-.products__item
-    cursor: pointer
-    height: 123px
-    @media (min-width: 1025px)
-        height: 177px
-
-    &.active .products__item-wrap
-        max-height: 333px
-        z-index: 1
-        @media (min-width: 1025px)
-            max-height: 426px
-
-    @media (min-width: 1025px) and (max-width: 1199px)
-        .products__item-wrap--2,
-        .products__item-wrap--3
-            transition: all 0.5s ease-in-out
-            width: 241px
-        .products__item-wrap--3
-            right: 0
-        &.active .products__item-wrap--2
-            max-height: 355px
-            width: 330px
-        &.active .products__item-wrap--3
-            right: 0
-            max-height: 355px
-            width: 280px
     @media (min-width: 1200px)
-        .products__item-wrap--2
-            transition: all 0.5s ease-in-out
-            width: 285px
-        &.active .products__item-wrap--2
-            width: 330px
+        width: 285px
+        &.active
+            width: 570px
+.products__item-wrap--3,
+.products__item-wrap--6
+    @media (min-width: 1025px)
+        right: 0
 
 .products__title
+    margin-bottom: 15px
     color: $white-color
     font-size: 18px
     font-weight: 700
@@ -129,61 +132,77 @@
         width: 166px
 
 .products__description
-    margin-top: 0
+    transition: all 0.5s ease
+    height: 1px
+
+    color: transparent
     font-size: 16px
     font-weight: 400
     line-height: 22px
     letter-spacing: 0em
     text-align: justify
-    color: transparent
-    max-height: 0
-    overflow: hidden
-    transition: all 0.5s ease-in-out
 
 .products__item
     &.active .products__description
-        margin-top: 17px
-        max-height: 333px
         color: $product-discription-color
 
-.products__item--8 .products__description
-    margin-bottom: 53px
-.products__item--4 .products__description
-    @media (min-width: 1025px)
-        margin-bottom: 40px
+.products__item--1.active .products__description,
+.products__item--6.active .products__description
+    height: 160px
+.products__item--4.active .products__description,
+.products__item--5.active .products__description,
+.products__item--8.active .products__description
+    height: 170px
+.products__item--2.active .products__description,
+.products__item--3.active .products__description,
+.products__item--7.active .products__description
+    height: 199px
 
-.products__item--3 .products__description
-    @media (min-width: 1025px) and (max-width: 1199px)
-        width: 240px
-.products__item--2 .products__description
-    @media (min-width: 1025px) and (max-width: 1199px)
-        width: 287px
+@media (min-width: 425px)
+    .products__item.active .products__description
+        height: 115px
+@media (min-width: 768px)
+    .products__item.active .products__description
+        height: 90px
+@media (min-width: 992px)
+    .products__item.active .products__description
+        height: 65px
+
+@media (min-width: 1025px)
+    .products__item--1.active .products__description,
+    .products__item--5.active .products__description,
+    .products__item--6.active .products__description
+        height: 99px
+    .products__item--3.active .products__description,
+    .products__item--4.active .products__description,
+    .products__item--7.active .products__description,
+    .products__item--8.active .products__description
+        height: 138px
+    .products__item--2.active .products__description
+        height: 150px
+
+.products__item--2 .products__description,
+.products__item--5 .products__description,
+.products__item--3 .products__description,
+.products__item--6 .products__description
     @media (min-width: 1025px)
-        width: 290px
+        width: 442px
+    @media (min-width: 1200px)
+        width: 530px
 
 .products__icon
-    margin-top: 40px
     width: 41px
     height: 15px
     rotate: 0deg
     fill: $stroke-color
     transition: all 0.5s ease-in-out
-
-@media (max-width: 413px)
-    .products__item--2 .products__icon
-        margin-top: 20px
+    z-index: 1
 
 .products__item
     &.active .products__icon
         fill: $active-color
         rotate: -90deg
-        margin-top: 25px
 
-.products__item--4 .products__icon
-    @media (min-width: 1025px)
-        position: absolute
-        bottom: 21px
-
-.products__item--8 .products__icon
-    position: absolute
-    bottom: 21px
+.products__item--8
+    &.active .products__icon
+        bottom: 0
