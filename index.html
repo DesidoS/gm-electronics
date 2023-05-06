@@ -61,11 +61,7 @@
         position: absolute;
         z-index: 2;
         width: 250px;
-        height: 250px;
-        background-image: url("./images/preloader-320-logo.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        height: 235px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -79,9 +75,9 @@
         .mobile-loader {
           background-image: url("./images/preloader-560.jpg");
         }
-        .mobile-loader-logo {
+        /* .mobile-loader-logo {
           background-image: url("./images/preloader-560-logo.png");
-        }
+        } */
       }
       .desktop-loader {
         display: none;
@@ -299,9 +295,12 @@
 
   <body>
     <div class="preloader">
-      <div class="mobile-loader">
-        <div class="mobile-loader-logo"></div>
-      </div>
+      <div class="mobile-loader"></div>
+      <img
+        class="mobile-loader-logo"
+        src="./images/preloader-320-logo.png"
+        alt="loader-logo"
+      />
       <video
         class="mobile-loader-video"
         src="./images/first_screen_video_.mp4"
