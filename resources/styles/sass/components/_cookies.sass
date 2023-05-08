@@ -1,6 +1,6 @@
 .cookies
     transition: transform 0.4s ease
-    display: block
+    display: none
     background-color: $cookies-background
     position: fixed
     bottom: 0
@@ -10,6 +10,9 @@
     height: auto
     @media (min-width: 1025px)
         height: 96px
+.cookies.active
+    display: block
+
 .cookies-container
     display: flex
     padding-top: 15px
