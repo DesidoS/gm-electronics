@@ -17,22 +17,19 @@
         width: 527px
 
 .services__items
-    position: static
     background-color: $accent-colors
-    height: 5px
-    width: calc( 100% - 1.5px )
-
     @media (min-width: 1025px)
         height: 322px
     @media (min-width: 1200px)
         height: 389px
 
 .services__item
-    position: absolute
     top: 5px
+    right: 5px
     opacity: 0
     animation: slide 9s infinite
     @media (min-width: 1025px)
+        right: 0
         left: 5px
         width: 440px
     @media (min-width: 1200px)
@@ -44,12 +41,17 @@
 
 .services__item_2
     animation-delay: 0s
+    width: calc( 100% - 0.5px )
 
 .services__item_3
+    position: absolute
     animation-delay: 3s
+    width: 100%
 
 .services__item_4
+    position: absolute
     animation-delay: 6s
+    width: 100%
 
 @keyframes slide
     0%
@@ -64,7 +66,6 @@
         opacity: 0
 
 .services__content
-    margin-top: 80%
     @media (min-width: 1025px)
         margin-top: 0
         width: 445px
