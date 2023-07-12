@@ -28,9 +28,7 @@ const cookiesClosePopupBtn = document.querySelector(".cookies__close-popup");
 cookiesOpenPopupBtn.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
-    setTimeout(() => {
-      document.body.style.overflow = "hidden";
-    }, 500);
+      document.body.style.overflowY = "hidden";
 
     if (window.innerHeight < 632) {
       cookiesPopup.classList.add("scroll");
@@ -45,7 +43,7 @@ cookiesOpenPopupBtn.forEach((button) => {
 });
 
 cookiesClosePopupBtn.addEventListener("click", () => {
-  document.body.style.overflow = "";
+  document.body.style.overflowY = "auto";
   cookiesPopupBg.classList.remove("active");
   cookiesPopup.classList.remove("active");
 });
